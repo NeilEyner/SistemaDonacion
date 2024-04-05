@@ -7,16 +7,18 @@ use CodeIgniter\Router\RouteCollection;
  */
 
 $routes->get('/', 'HomeController::index', ['as' => 'home']);
+$routes->get('contacto', 'HomeController::contacto');
 
 //login - register
 $routes->get('Auth/login', 'Auth\AuthController::showLoginForm');
 $routes->post('Auth/login', 'Auth\AuthController::login');
 $routes->get('Auth/register', 'Auth\AuthController::showRegistrationForm');
 $routes->post('Auth/register', 'Auth\AuthController::register');
-$routes->get('Auth/logout', 'Auth\Auth\AuthController::logout');
+$routes->get('Auth/logout', 'Auth\AuthController::logout');
 
 //dashboard routes
 $routes->get('Admin/admin_dashboard', 'Admin\AdminController::dashboard', ['as' => 'admin.dashboard']);
+
 $routes->get('Donante/donante_dashboard', 'Donante\DonanteController::dashboard', ['as' => 'donante.dashboard']);
 $routes->get('Receptor/receptor_dashboard', 'Receptor\ReceptorController::dashboard', ['as' => 'receptor.dashboard']);
 $routes->get('Voluntario/voluntario_dashboard', 'Voluntario\VoluntarioController::dashboard', ['as' => 'voluntario.dashboard']);

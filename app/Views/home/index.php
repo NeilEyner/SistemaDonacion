@@ -1,8 +1,20 @@
-
 <?php
-// Iniciar la sesión
-session_start();
+//la sesión
+$session = session()
 
-// Incluir el archivo de enrutamiento
-require_once 'routes.php';
 ?>
+<?= $this->include('Layouts/header.php'); ?>
+
+<body class="">
+    <!-- Barra de navegación -->
+    <?= $this->include('Layouts/nav.php'); ?>
+
+    <!-- Contenido principal -->
+    <main>
+        <?= $this->include('home/inicio'); ?>
+    </main>
+
+    <!-- Pie de página -->
+    <?= $this->include('Layouts/footer.php'); ?>
+</body>
+</html>

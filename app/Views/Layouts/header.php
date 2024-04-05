@@ -1,31 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php echo $title ?? 'Sistema de Donaciones'; ?></title>
-    <!-- Agregar enlaces a archivos CSS -->
+    <!-- Enlace a Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Enlace a Font Awesome CSS para los iconos -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"  rel="stylesheet" >
+
+    <!-- Tu archivo de estilos personalizados -->
     <link rel="stylesheet" href="/css/styles.css">
+
+
 </head>
-<body>
-    <header>
-        <nav>
-            <div class="logo">
-                <a href="/">Sistema de Donaciones</a>
-            </div>
-            <ul>
-                <li><a href="/">Inicio</a></li>
-                <li><a href="/about">Quiénes Somos</a></li>
-                <li><a href="/products">Productos</a></li>
-                <li><a href="/contact">Contacto</a></li>
-                <li><a href="/faq">Preguntas Frecuentes</a></li>
-                <?php if (isset($_SESSION['usuario_id'])): ?>
-                    <li><a href="/dashboard">Mi Cuenta</a></li>
-                    <li><a href="/logout">Cerrar Sesión</a></li>
-                <?php else: ?>
-                    <li><a href="/login">Iniciar Sesión</a></li>
-                <?php endif; ?>
-            </ul>
-        </nav>
-    </header>
-    <main>

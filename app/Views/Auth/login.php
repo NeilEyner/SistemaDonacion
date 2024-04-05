@@ -33,7 +33,7 @@
             <button type="submit" class="btn btn-primary">Iniciar sesión</button>
         </form>
     </div>
-    <p>¿No tienes una cuenta? <a href="/register">Regístrate aquí</a></p>
-    <!-- Agrega tus scripts JavaScript aquí -->
+    <p>¿No tienes una cuenta? <a href="<?php echo base_url('Auth/register') ?>">Regístrate aquí</a></p>
+
 </body>
 </html>
