@@ -44,8 +44,7 @@ class AuthController extends BaseController
             return redirect()->back()->withInput()->with('errors', ['El usuario no existe']);
         }
 
-        // Verificar si la contraseña proporcionada coincide con la contraseña almacenada en la base de datos
-        if (password_verify($password, $user['Contrasena'])) {
+        if ($password !== $user['Contrasena']) {
             return redirect()->back()->withInput()->with('errors', ['Contrasena incorrecta']);
         }
     
@@ -58,6 +57,7 @@ class AuthController extends BaseController
         ];
     
         // Establecer la sesión del usuario
+        session()->start();
         session()->set('loggedUser', $sessionData);
     
         // Redirigir al panel de control según el rol del usuario
@@ -80,7 +80,7 @@ class AuthController extends BaseController
     {
         // Eliminar los datos del usuario de la sesión
         session()->remove('loggedUser');
-
+        session()->destroy();
         // Redirigir al formulario de inicio de sesión
         return redirect()->to(route_to('home'));
     }
@@ -94,7 +94,7 @@ class AuthController extends BaseController
             'Nombre' => $this->request->getPost('nombre'),
             'Usuario' => $this->request->getPost('usuario'),
             'CorreoElectronico' => $this->request->getPost('correo'),
-            'Contrasena' =>  password_hash($this->request->getPost('contrasena'), PASSWORD_DEFAULT),
+            'Contrasena' =>  $this->request->getPost('contrasena'),
             'Rol' => 'Voluntario', // Rol por defecto
             'Habilitado' => true // Usuario habilitado por defecto
         ];

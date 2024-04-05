@@ -46,61 +46,58 @@
                                                     href="<?php echo base_url('/Admin/admin_dashboard') ?>">Panel de
                                                     Control</a></li>
                                             <li><a class="dropdown-item"
-                                                    href="<?php echo base_url('/admin/usuarios') ?>">Usuarios</a>
+                                                    href="<?php echo base_url('/admin/admin_usuarios') ?>">Usuarios</a>
                                             </li>
                                             <li><a class="dropdown-item"
-                                                    href="<?php echo base_url('/admin/donaciones') ?>">Donaciones</a>
+                                                    href="<?php echo base_url('/admin/admin_donaciones') ?>">Donaciones</a>
                                             </li>
                                             <li><a class="dropdown-item"
-                                                    href="<?php echo base_url('/admin/solicitudes') ?>">Solicitudes</a>
+                                                    href="<?php echo base_url('/admin/admin_solicitudes') ?>">Solicitudes</a>
                                             </li>
                                             <li><a class="dropdown-item"
-                                                    href="<?php echo base_url('/admin/postulaciones') ?>">Postulaciones</a>
+                                                    href="<?php echo base_url('/admin/admin_postulaciones') ?>">Postulaciones</a>
                                             </li>
                                         <?php
                                             break;
                                         case 'Donante':
                                         ?>
                                             <li><a class="dropdown-item"
-                                                    href="<?php echo base_url('/donante/dashboard') ?>">Panel de
-                                                    Control</a></li>
+                                                    href="<?php echo base_url('/Donante/donante_dashboard') ?>">Panel de Control</a></li>
                                             <li><a class="dropdown-item"
-                                                    href="<?php echo base_url('/donante/donaciones') ?>">Mis
-                                                    Donaciones</a></li>
+                                                    href="<?php echo base_url('/Donante/donante_donaciones') ?>">Mis Donaciones</a></li>
                                             <li><a class="dropdown-item"
-                                                    href="<?php echo base_url('/donante/solicitudes') ?>">Solicitudes
-                                                    de Donación</a></li>
+                                                    href="<?php echo base_url('/Donante/donante_solicitudes') ?>">Solicitudes de Donación</a></li>
                                             <li><a class="dropdown-item"
-                                                    href="<?php echo base_url('/donante/perfil') ?>">Mi Perfil</a>
+                                                    href="<?php echo base_url('/Donante/donante_perfil') ?>">Mi Perfil</a>
                                             </li>
                                         <?php
                                             break;
                                         case 'Receptor':
                                         ?>
                                             <li><a class="dropdown-item"
-                                                    href="<?php echo base_url('/receptor/dashboard') ?>">Panel de
+                                                    href="<?php echo base_url('/Receptor/receptor_dashboard') ?>">Panel de
                                                     Control</a></li>
                                             <li><a class="dropdown-item"
-                                                    href="<?php echo base_url('/receptor/solicitudes') ?>">Mis
+                                                    href="<?php echo base_url('/Receptor/receptor_solicitudes') ?>">Mis
                                                     Solicitudes</a></li>
                                             <li><a class="dropdown-item"
-                                                    href="<?php echo base_url('/receptor/donaciones') ?>">Donaciones
+                                                    href="<?php echo base_url('/Receptor/receptor_donaciones') ?>">Donaciones
                                                     Recibidas</a></li>
                                             <li><a class="dropdown-item"
-                                                    href="<?php echo base_url('/receptor/perfil') ?>">Mi Perfil</a>
+                                                    href="<?php echo base_url('/Receptor/receptor_perfil') ?>">Mi Perfil</a>
                                             </li>
                                         <?php
                                             break;
                                         case 'Voluntario':
                                         ?>
                                             <li><a class="dropdown-item"
-                                                    href="<?php echo base_url('/voluntario/dashboard') ?>">Panel de
+                                                    href="<?php echo base_url('/Voluntario/voluntario_dashboard') ?>">Panel de
                                                     Control</a></li>
                                             <li><a class="dropdown-item"
-                                                    href="<?php echo base_url('/voluntario/postulaciones') ?>">Mis
+                                                    href="<?php echo base_url('/Voluntario/voluntario_postulaciones') ?>">Mis
                                                     Postulaciones</a></li>
                                             <li><a class="dropdown-item"
-                                                    href="<?php echo base_url('/voluntario/perfil') ?>">Mi Perfil</a>
+                                                    href="<?php echo base_url('/Voluntario/voluntario_perfil') ?>">Mi Perfil</a>
                                             </li>
                                     <?php
                                             break;

@@ -1,5 +1,10 @@
 <section id="inicio" class="hero-section mt-5 pt-5">
-    
+<body class="">
+    <!-- Barra de navegación -->
+
+
+    <!-- Contenido principal -->
+    <main>
     <div class="container">
         <div class="row">
             <!-- Contenido y botón de donar a la izquierda -->
