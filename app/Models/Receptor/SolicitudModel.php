@@ -12,7 +12,9 @@ class SolicitudModel extends Model
 
     protected $useTimestamps = false; // Desactiva la inserción automática de timestamps (created_at, updated_at)
 
-    // Define relaciones
-    protected $returnType = 'object'; // Tipo de datos que retorna (objeto en este caso)
+
+    public function getSolicitud(){
+        return $this->findAll();
+    }
 
 }

@@ -1,33 +1,112 @@
-<div class="container">
-    <h1>Postulaciones de Voluntarios</h1>
+<?php
+//la sesión
+$session = session()
 
-    <table class="table">
+?>
+<?= $this->include('Layouts/header.php'); ?>
+
+<body class="">
+    <!-- Barra de navegación -->
+    <?= $this->include('Layouts/nav.php'); ?>
+
+    <!-- Contenido principal -->
+    <main>
+    <h1>Administración de Postulaciones</h1>
+    <h1>Solicitudes de Postulaciones</h1>
+    <table>
         <thead>
             <tr>
                 <th>ID</th>
                 <th>Voluntario</th>
-                <th>Operación</th>
                 <th>Solicitud</th>
-                <th>Fecha</th>
+                <th>Fecha de Postulación</th>
                 <th>Estado</th>
-                <th>Acciones</th>
+                <th>Acción</th>
             </tr>
         </thead>
         <tbody>
             <?php foreach ($postulaciones as $postulacion): ?>
-            <tr>
-                <td><?= $postulacion['id'] ?></td>
-                <td><?= $postulacion['nombre_voluntario'] ?></td>
-                <td><?= $postulacion['tipo_operacion'] ?></td>
-                <td><?= $postulacion['descripcion_solicitud'] ?></td>
-                <td><?= $postulacion['fecha_postulacion'] ?></td>
-                <td><?= $postulacion['estado_postulacion'] ?></td>
-                <td>
-                    <a href="<?= base_url('admin/postulaciones/aceptar/' . $postulacion['id']) ?>" class="btn btn-sm btn-success">Aceptar</a>
-                    <a href="<?= base_url('admin/postulaciones/rechazar/' . $postulacion['id']) ?>" class="btn btn-sm btn-danger">Rechazar</a>
-                </td>
-            </tr>
+                <tr>
+                <td><?php echo $postulacion['IDPostulacion']; ?></td>
+                    <td><?php echo $postulacion['IDVoluntario']; ?></td>
+                    <td><?php echo $postulacion['TipoOperacion']; ?></td>
+                    <td><?php echo $postulacion['IDSolicitud']; ?></td>
+                    <td><?php echo $postulacion['FechaPostulacion']; ?></td>
+                    <td><?php echo $postulacion['EstadoPostulacion']; ?></td>
+                    <td>
+                        <?php if ($postulacion['EstadoPostulacion'] == 'Pendiente'): ?>
+                            <a href="<?php echo base_url('admin/aceptar_postulacion/' . $postulacion['IDPostulacion']); ?>">Aceptar</a> |
+                            <a href="<?php echo base_url('admin/rechazar_postulacion/' . $postulacion['IDPostulacion']); ?>">Rechazar</a>
+                        <?php endif; ?>
+                    </td>
+                </tr>
             <?php endforeach; ?>
         </tbody>
+
     </table>
-</div>
+
+
+
+    <h1>Postulaciones Aceptadas</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Voluntario</th>
+                <th>Solicitud</th>
+                <th>Fecha de Postulación</th>
+                <th>Estado</th>
+                <th>Acción</th>
+            </tr>
+        </thead>
+        <tbody>
+            <?php foreach ($postulacionesAceptada as $postulacion): ?>
+                <tr>
+                <td><?php echo $postulacion['IDPostulacion']; ?></td>
+                    <td><?php echo $postulacion['IDVoluntario']; ?></td>
+                    <td><?php echo $postulacion['TipoOperacion']; ?></td>
+                    <td><?php echo $postulacion['IDSolicitud']; ?></td>
+                    <td><?php echo $postulacion['FechaPostulacion']; ?></td>
+                    <td><?php echo $postulacion['EstadoPostulacion']; ?></td>
+                </tr>
+            <?php endforeach; ?>
+        </tbody>
+
+    </table>
+
+
+    <h1>Postulaciones Rechazadas</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Voluntario</th>
+                <th>Solicitud</th>
+                <th>Fecha de Postulación</th>
+                <th>Estado</th>
+                <th>Acción</th>
+            </tr>
+        </thead>
+        <tbody>
+            <?php foreach ($postulacionesRechazada as $postulacion): ?>
+                <tr>
+                <td><?php echo $postulacion['IDPostulacion']; ?></td>
+                    <td><?php echo $postulacion['IDVoluntario']; ?></td>
+                    <td><?php echo $postulacion['TipoOperacion']; ?></td>
+                    <td><?php echo $postulacion['IDSolicitud']; ?></td>
+                    <td><?php echo $postulacion['FechaPostulacion']; ?></td>
+                    <td><?php echo $postulacion['EstadoPostulacion']; ?></td>
+                </tr>
+            <?php endforeach; ?>
+        </tbody>
+
+    </table>
+
+
+    </main>
+
+    <!-- Pie de página -->
+    <?= $this->include('Layouts/footer.php'); ?>
+</body>
+
+</html>

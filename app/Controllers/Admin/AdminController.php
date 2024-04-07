@@ -41,50 +41,35 @@ class AdminController extends BaseController
 
     public function usuarios()
     {
-        $usuarioModel = model(UsuarioModel::class);
-        $usuarios = $usuarioModel->findAll();
-
-        $data = [
-            'usuarios' => $usuarios,
-        ];
-
+        $usuarioModel = new UsuarioModel();
+        $data['usuarios'] = $usuarioModel->getUsuarios();
         return view('Admin/admin_usuarios', $data);
     }
 
     public function donaciones()
     {
-        $donacionModel = model(DonacionModel::class);
-        $donaciones = $donacionModel->getDonacionesConDetalles();
-
-        $data = [
-            'donaciones' => $donaciones,
-        ];
-
+        $donacionModel = new DonacionModel();
+        $data ['donacionesPendientes'] =$donacionModel->getDonacionPendiente();
+        $data ['donacionesEntregadas'] =$donacionModel->getDonacionEntregada();
+        $data ['donacionesCanceladas'] =$donacionModel->getDonacionCancelada();
         return view('Admin/admin_donaciones', $data);
     }
 
     public function solicitudes()
     {
-        $solicitudModel = model(SolicitudModel::class);
-        $solicitudes = $solicitudModel->getSolicitudesConDetalles();
-
-        $data = [
-            'solicitudes' => $solicitudes,
-        ];
-
+        $solicitudModel =new SolicitudModel();
+        $data['solicitudes' ] = $solicitudModel->getSolicitud();
         return view('Admin/admin_solicitudes', $data);
     }
 
     public function postulaciones()
     {
-        $postulacionModel = model(PostulacionModel::class);
-        $postulaciones = $postulacionModel->getPostulacionesConDetalles();
-
-        $data = [
-            'postulaciones' => $postulaciones,
-        ];
+        $postulacionesModel = new PostulacionModel();
+        $data['postulaciones'] = $postulacionesModel->getPostulacionesPendientes();
+        $data['postulacionesAceptada'] = $postulacionesModel->getPostulacionesAceptada();
+        $data['postulacionesRechazada'] = $postulacionesModel->getPostulacionesRechazada();
 
         return view('Admin/admin_postulaciones', $data);
     }
-    // Otros métodos para gestionar usuarios, donaciones, solicitudes, etc.
+
 }

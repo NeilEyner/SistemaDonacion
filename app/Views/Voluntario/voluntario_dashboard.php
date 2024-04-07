@@ -1,20 +1,12 @@
 <?php
-//la sesión
 $session = session()
-
 ?>
 <?= $this->include('Layouts/header.php'); ?>
-
 <body class="">
-    <!-- Barra de navegación -->
     <?= $this->include('Layouts/nav.php'); ?>
-
-    <!-- Contenido principal -->
     <main>
-
+        
         <h1>Bienvenido al Panel de Control del Voluntario</h1>
-
-
         <!-- Mostrar las solicitudes de donación pendientes -->
         <h2>Solicitudes de Donación Pendientes</h2>
         <?php if (empty($solicitudes_pendientes)) : ?>
@@ -38,10 +30,8 @@ $session = session()
                 <?php endforeach; ?>
             </ul>
         <?php endif; ?>
-    </main>
 
-    <!-- Pie de página -->
+    </main>
     <?= $this->include('Layouts/footer.php'); ?>
 </body>
-
 </html>

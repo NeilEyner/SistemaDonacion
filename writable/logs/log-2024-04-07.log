@@ -1,0 +1,200 @@
+CRITICAL - 2024-04-07 01:57:35 --> ErrorException: Undefined array key "id"
+in APPPATH\Views\Admin\admin_usuarios.php on line 21.
+ 1 APPPATH\Views\Admin\admin_usuarios.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\xampp\\htdocs\\SistemaDonacionBolivia\\app\\Views\\Admin\\admin_usuarios.php', 21)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\SistemaDonacionBolivia\\app\\Views\\Admin\\admin_usuarios.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Admin/admin_usuarios', [], true)
+ 5 APPPATH\Controllers\Admin\AdminController.php(51): view('Admin/admin_usuarios', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Admin\AdminController->usuarios()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-07 01:59:46 --> ErrorException: Undefined array key "id"
+in APPPATH\Views\Admin\admin_usuarios.php on line 21.
+ 1 APPPATH\Views\Admin\admin_usuarios.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\xampp\\htdocs\\SistemaDonacionBolivia\\app\\Views\\Admin\\admin_usuarios.php', 21)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\SistemaDonacionBolivia\\app\\Views\\Admin\\admin_usuarios.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Admin/admin_usuarios', [], true)
+ 5 APPPATH\Controllers\Admin\AdminController.php(47): view('Admin/admin_usuarios', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Admin\AdminController->usuarios()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-07 02:00:49 --> ErrorException: Undefined array key "id"
+in APPPATH\Views\Admin\admin_usuarios.php on line 21.
+ 1 APPPATH\Views\Admin\admin_usuarios.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\xampp\\htdocs\\SistemaDonacionBolivia\\app\\Views\\Admin\\admin_usuarios.php', 21)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\SistemaDonacionBolivia\\app\\Views\\Admin\\admin_usuarios.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Admin/admin_usuarios', [], true)
+ 5 APPPATH\Controllers\Admin\AdminController.php(47): view('Admin/admin_usuarios', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Admin\AdminController->usuarios()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-07 02:03:19 --> ErrorException: Undefined array key "id"
+in APPPATH\Views\Admin\admin_usuarios.php on line 29.
+ 1 APPPATH\Views\Admin\admin_usuarios.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\xampp\\htdocs\\SistemaDonacionBolivia\\app\\Views\\Admin\\admin_usuarios.php', 29)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\SistemaDonacionBolivia\\app\\Views\\Admin\\admin_usuarios.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Admin/admin_usuarios', [], true)
+ 5 APPPATH\Controllers\Admin\AdminController.php(47): view('Admin/admin_usuarios', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Admin\AdminController->usuarios()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-07 02:04:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-07 02:04:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-07 02:05:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-07 02:05:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-07 02:05:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-04-07 02:05:25 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-04-07 02:05:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-07 02:05:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-07 02:06:54 --> BadMethodCallException: Call to undefined method App\Models\Donante\DonacionModel::getDonacionesConDetalles
+in SYSTEMPATH\Model.php on line 879.
+ 1 APPPATH\Controllers\Admin\AdminController.php(53): CodeIgniter\Model->__call('getDonacionesConDetalles', [])
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Admin\AdminController->donaciones()
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-07 02:08:45 --> ErrorException: Undefined array key "id"
+in APPPATH\Views\Admin\admin_donaciones.php on line 18.
+ 1 APPPATH\Views\Admin\admin_donaciones.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\xampp\\htdocs\\SistemaDonacionBolivia\\app\\Views\\Admin\\admin_donaciones.php', 18)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\SistemaDonacionBolivia\\app\\Views\\Admin\\admin_donaciones.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Admin/admin_donaciones', [], true)
+ 5 APPPATH\Controllers\Admin\AdminController.php(54): view('Admin/admin_donaciones', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Admin\AdminController->donaciones()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-07 02:12:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-07 02:13:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-07 02:13:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-07 02:14:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-07 02:15:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-07 02:15:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-07 02:16:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-07 02:16:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-07 02:16:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-07 02:16:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-07 02:16:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-07 02:16:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-07 02:16:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-07 02:16:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-07 02:16:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-07 02:16:32 --> ErrorException: Undefined variable $donacionesPendient
+in APPPATH\Views\Admin\admin_donaciones.php on line 31.
+ 1 APPPATH\Views\Admin\admin_donaciones.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $donacionesPendient', 'C:\\xampp\\htdocs\\SistemaDonacionBolivia\\app\\Views\\Admin\\admin_donaciones.php', 31)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\SistemaDonacionBolivia\\app\\Views\\Admin\\admin_donaciones.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Admin/admin_donaciones', [], true)
+ 5 APPPATH\Controllers\Admin\AdminController.php(53): view('Admin/admin_donaciones', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Admin\AdminController->donaciones()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-07 02:31:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-07 02:31:11 --> ErrorException: Undefined variable $donacionesEntregasdas
+in APPPATH\Views\Admin\admin_donaciones.php on line 69.
+ 1 APPPATH\Views\Admin\admin_donaciones.php(69): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $donacionesEntregasdas', 'C:\\xampp\\htdocs\\SistemaDonacionBolivia\\app\\Views\\Admin\\admin_donaciones.php', 69)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\SistemaDonacionBolivia\\app\\Views\\Admin\\admin_donaciones.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Admin/admin_donaciones', [], true)
+ 5 APPPATH\Controllers\Admin\AdminController.php(55): view('Admin/admin_donaciones', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Admin\AdminController->donaciones()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-07 02:31:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-07 02:31:12 --> ErrorException: Undefined variable $donacionesEntregasdas
+in APPPATH\Views\Admin\admin_donaciones.php on line 69.
+ 1 APPPATH\Views\Admin\admin_donaciones.php(69): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $donacionesEntregasdas', 'C:\\xampp\\htdocs\\SistemaDonacionBolivia\\app\\Views\\Admin\\admin_donaciones.php', 69)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\SistemaDonacionBolivia\\app\\Views\\Admin\\admin_donaciones.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Admin/admin_donaciones', [], true)
+ 5 APPPATH\Controllers\Admin\AdminController.php(55): view('Admin/admin_donaciones', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Admin\AdminController->donaciones()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-07 02:31:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-07 02:33:35 --> BadMethodCallException: Call to undefined method App\Models\Receptor\SolicitudModel::getSolicitudesConDetalles
+in SYSTEMPATH\Model.php on line 879.
+ 1 APPPATH\Controllers\Admin\AdminController.php(61): CodeIgniter\Model->__call('getSolicitudesConDetalles', [])
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Admin\AdminController->solicitudes()
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-07 02:33:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-07 02:33:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-07 02:36:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-07 02:43:31 --> BadMethodCallException: Call to undefined method App\Models\Receptor\SolicitudModel::getSolicitudesConDetalles
+in SYSTEMPATH\Model.php on line 879.
+ 1 APPPATH\Controllers\Admin\AdminController.php(61): CodeIgniter\Model->__call('getSolicitudesConDetalles', [])
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Admin\AdminController->solicitudes()
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-07 02:49:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-07 02:49:40 --> Error: Cannot use object of type stdClass as array
+in APPPATH\Views\Admin\admin_solicitudes.php on line 31.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Admin/admin_solicitudes', [], true)
+ 4 APPPATH\Controllers\Admin\AdminController.php(62): view('Admin/admin_solicitudes', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Admin\AdminController->solicitudes()
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-07 03:06:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-07 03:06:40 --> Error: Cannot use object of type stdClass as array
+in APPPATH\Views\Admin\admin_solicitudes.php on line 35.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Admin/admin_solicitudes', [], true)
+ 4 APPPATH\Controllers\Admin\AdminController.php(62): view('Admin/admin_solicitudes', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Admin\AdminController->solicitudes()
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-07 03:07:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-07 03:07:26 --> ErrorException: Undefined array key "id"
+in APPPATH\Views\Admin\admin_solicitudes.php on line 45.
+ 1 APPPATH\Views\Admin\admin_solicitudes.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\xampp\\htdocs\\SistemaDonacionBolivia\\app\\Views\\Admin\\admin_solicitudes.php', 45)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\SistemaDonacionBolivia\\app\\Views\\Admin\\admin_solicitudes.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Admin/admin_solicitudes', [], true)
+ 5 APPPATH\Controllers\Admin\AdminController.php(62): view('Admin/admin_solicitudes', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Admin\AdminController->solicitudes()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-07 03:07:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-07 03:08:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-07 03:08:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-07 03:11:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-07 03:11:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-07 03:11:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-07 03:11:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-07 03:12:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-07 03:12:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-07 03:12:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-07 03:12:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-07 03:12:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-07 03:12:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-07 03:12:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-07 03:12:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-07 03:13:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-07 03:14:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-07 03:14:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-07 03:15:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-07 03:16:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-07 03:16:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-07 03:16:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-07 03:16:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-07 03:17:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-07 03:17:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-07 03:17:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-07 03:17:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-07 03:17:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

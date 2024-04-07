@@ -46,16 +46,16 @@
                                                     href="<?php echo base_url('/Admin/admin_dashboard') ?>">Panel de
                                                     Control</a></li>
                                             <li><a class="dropdown-item"
-                                                    href="<?php echo base_url('/admin/admin_usuarios') ?>">Usuarios</a>
+                                                    href="<?php echo base_url('/Admin/admin_usuarios') ?>">Usuarios</a>
                                             </li>
                                             <li><a class="dropdown-item"
-                                                    href="<?php echo base_url('/admin/admin_donaciones') ?>">Donaciones</a>
+                                                    href="<?php echo base_url('/Admin/admin_donaciones') ?>">Donaciones</a>
                                             </li>
                                             <li><a class="dropdown-item"
-                                                    href="<?php echo base_url('/admin/admin_solicitudes') ?>">Solicitudes</a>
+                                                    href="<?php echo base_url('/Admin/admin_solicitudes') ?>">Solicitudes</a>
                                             </li>
                                             <li><a class="dropdown-item"
-                                                    href="<?php echo base_url('/admin/admin_postulaciones') ?>">Postulaciones</a>
+                                                    href="<?php echo base_url('/Admin/admin_postulaciones') ?>">Postulaciones</a>
                                             </li>
                                         <?php
                                             break;

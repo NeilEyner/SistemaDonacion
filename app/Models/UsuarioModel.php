@@ -23,4 +23,8 @@ class UsuarioModel extends Model
 
         return $data;
     }
+    public function getusuarios()
+    {
+        return $this->findAll();
+    }
 }

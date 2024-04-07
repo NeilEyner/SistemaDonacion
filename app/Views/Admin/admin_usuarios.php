@@ -1,4 +1,16 @@
+<?php
+//la sesión
+$session = session()
 
+?>
+<?= $this->include('Layouts/header.php'); ?>
+
+<body class="">
+    <!-- Barra de navegación -->
+    <?= $this->include('Layouts/nav.php'); ?>
+
+    <!-- Contenido principal -->
+    <main>
 <div class="container">
     <h1>Usuarios</h1>
 
@@ -7,8 +19,9 @@
     <table class="table">
         <thead>
             <tr>
-                <th>ID</th>
+                <th>IDUsuario</th>
                 <th>Nombre</th>
+                <th>Usuario</th>
                 <th>Correo Electrónico</th>
                 <th>Rol</th>
                 <th>Habilitado</th>
@@ -18,17 +31,26 @@
         <tbody>
             <?php foreach ($usuarios as $usuario): ?>
             <tr>
-                <td><?= $usuario['id'] ?></td>
-                <td><?= $usuario['nombre'] . ' ' . $usuario['apellido'] ?></td>
-                <td><?= $usuario['email'] ?></td>
-                <td><?= $usuario['rol'] ?></td>
-                <td><?= $usuario['habilitado'] ? 'Sí' : 'No' ?></td>
+                <td><?= $usuario['IDUsuario'] ?></td>
+                <td><?= $usuario['Nombre'] ?></td>
+                <td><?= $usuario['Usuario'] ?></td>
+                <td><?= $usuario['CorreoElectronico'] ?></td>
+                <td><?= $usuario['Rol'] ?></td>
+                <td><?= $usuario['Habilitado'] ? 'Sí' : 'No' ?></td>
                 <td>
-                    <a href="<?= base_url('admin/usuarios/editar/' . $usuario['id']) ?>" class="btn btn-sm btn-primary">Editar</a>
-                    <a href="<?= base_url('admin/usuarios/eliminar/' . $usuario['id']) ?>" class="btn btn-sm btn-danger">Eliminar</a>
+                    <a href="<?= base_url('admin/usuarios/editar/' . $usuario['IDUsuario']) ?>" class="btn btn-sm btn-primary">Editar</a>
+                    <a href="<?= base_url('admin/usuarios/eliminar/' . $usuario['IDUsuario']) ?>" class="btn btn-sm btn-danger">Eliminar</a>
                 </td>
             </tr>
             <?php endforeach; ?>
         </tbody>
     </table>
 </div>
+
+</main>
+
+<!-- Pie de página -->
+<?= $this->include('Layouts/footer.php'); ?>
+</body>
+
+</html>

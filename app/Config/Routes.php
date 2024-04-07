@@ -18,6 +18,10 @@ $routes->get('Auth/logout', 'Auth\AuthController::logout');
 
 //dashboard routes
 $routes->get('Admin/admin_dashboard', 'Admin\AdminController::dashboard', ['as' => 'admin.dashboard']);
+$routes->get('Admin/admin_donaciones', 'Admin\AdminController::donaciones', ['as' => 'admin.donaciones']);
+$routes->get('Admin/admin_postulaciones', 'Admin\AdminController::postulaciones', ['as' => 'admin.postulaciones']);
+$routes->get('Admin/admin_solicitudes', 'Admin\AdminController::solicitudes', ['as' => 'admin.solicitudes']);
+$routes->get('Admin/admin_usuarios', 'Admin\AdminController::usuarios', ['as' => 'admin.usuarios']);
 
 $routes->get('Donante/donante_dashboard', 'Donante\DonanteController::dashboard', ['as' => 'donante.dashboard']);
 $routes->get('Receptor/receptor_dashboard', 'Receptor\ReceptorController::dashboard', ['as' => 'receptor.dashboard']);
