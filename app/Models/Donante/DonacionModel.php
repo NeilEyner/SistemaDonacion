@@ -31,4 +31,21 @@ class DonacionModel extends Model
         
         return $this->where('EstadoDonacion', 'Entregada')->findAll();
     }
+    public function getDonacionPendienteId($id)
+    {
+        
+        return $this->where('IDDonante',$id)->where('EstadoDonacion', 'Pendiente')->findAll();
+    }
+    public function getSumaDonacion($id)
+    {
+        
+        return $this->select('TipoDeDonacion, COUNT(*) as total')->groupBy('TipoDeDonacion')->where('IDDonante',$id)->findAll();
+    }
+
+    public function getDonacionHistorial($id)
+    {
+
+        return $this->where('IDDonante',$id)->findAll(); 
+    }
+
 }

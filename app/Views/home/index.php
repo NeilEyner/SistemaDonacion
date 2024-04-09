@@ -1,8 +1,4 @@
-<?php
-//la sesión
-$session = session()
-
-?>
+<?php $session = session() ?>
 <?= $this->include('Layouts/header.php'); ?>
 
 <body class="">
@@ -12,6 +8,10 @@ $session = session()
     <!-- Contenido principal -->
     <main>
         <?= $this->include('home/inicio'); ?>
+        <?= $this->include('home/quienes_somos'); ?>
+        <?= $this->include('home/donaciones'); ?>
+        <?= $this->include('home/contacto'); ?>
+        <?= $this->include('home/preguntas'); ?>
     </main>
 
     <!-- Pie de página -->

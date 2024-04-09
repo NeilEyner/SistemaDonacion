@@ -10,6 +10,15 @@ class PostulacionModel extends Model
     protected $primaryKey = 'IDPostulacion';
     protected $allowedFields = ['IDVoluntario', 'TipoOperacion', 'IDSolicitud', 'FechaPostulacion', 'EstadoPostulacion'];
 
+    public function getPostulacionPorIdVol($id)
+    {
+        return $this->where('IDVoluntario', $id)->findAll();
+    }
+    public function getPostulaciones()
+    {
+        // Consulta las postulaciones pendientes de la base de datos
+        return $this->findAll();
+    }
     public function getPostulacionesPendientes()
     {
         // Consulta las postulaciones pendientes de la base de datos

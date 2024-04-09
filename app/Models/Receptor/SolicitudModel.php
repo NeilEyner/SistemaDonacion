@@ -16,5 +16,17 @@ class SolicitudModel extends Model
     public function getSolicitud(){
         return $this->findAll();
     }
+    public function getSolicitudAceptada()
+    {
+        return $this->where('EstadoSolicitud', 'Aceptada')->findAll();
+    }
+    public function getSolicitudRechazada()
+    {
+        return $this->where('EstadoSolicitud', 'Rechazada')->findAll();
+    }
+    public function getSolicitudPendiente()
+    {
+        return $this->where('EstadoSolicitud', 'Pendiente')->findAll();
+    }
 
 }

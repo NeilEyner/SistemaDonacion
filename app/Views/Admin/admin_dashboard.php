@@ -18,7 +18,7 @@ $session = session()
             <div class="card-body">
                 <h5 class="card-title"><i class="bi bi-people"></i> Usuarios Registrados</h5>
                 <p class="card-text">Total de usuarios registrados: <?= $totalUsuarios ?></p>
-                <a href="<?= route_to('admin.usuarios') ?>" class="btn btn-primary"><i class="bi bi-people"></i> Ver usuarios</a>
+                <a href="<?= base_url(route_to('admin.usuarios')) ?>" class="btn btn-primary"><i class="bi bi-people"></i> Ver usuarios</a>
             </div>
         </div>
 
@@ -26,7 +26,7 @@ $session = session()
             <div class="card-body">
                 <h5 class="card-title"><i class="bi bi-wallet2"></i> Donaciones Pendientes</h5>
                 <p class="card-text">Total de donaciones pendientes: <?= $donacionesPendientes ?></p>
-                <a href="<?= route_to('admin.donaciones') ?>" class="btn btn-primary"><i class="bi bi-wallet2"></i> Administrar donaciones</a>
+                <a href="<?= base_url(route_to('admin.donaciones')) ?>" class="btn btn-primary"><i class="bi bi-wallet2"></i> Administrar donaciones</a>
             </div>
         </div>
 
@@ -40,7 +40,7 @@ $session = session()
                         <div class="card-body">
                             <h5 class="card-title"><i class="bi bi-person"></i> Usuarios</h5>
                             <p class="card-text">Gestiona los usuarios del sistema.</p>
-                            <a href="<?= base_url('admin/usuarios') ?>" class="btn btn-primary"><i class="bi bi-person"></i> Ver Usuarios</a>
+                            <a href="<?= base_url('Admin/admin_usuarios') ?>" class="btn btn-primary"><i class="bi bi-person"></i> Ver Usuarios</a>
                         </div>
                     </div>
                 </div>
@@ -50,7 +50,7 @@ $session = session()
                         <div class="card-body">
                             <h5 class="card-title"><i class="bi bi-currency-dollar"></i> Donaciones</h5>
                             <p class="card-text">Administra las donaciones recibidas.</p>
-                            <a href="<?= base_url('admin/donaciones') ?>" class="btn btn-primary"><i class="bi bi-currency-dollar"></i> Ver Donaciones</a>
+                            <a href="<?= base_url('Admin/admin_donaciones') ?>" class="btn btn-primary"><i class="bi bi-currency-dollar"></i> Ver Donaciones</a>
                         </div>
                     </div>
                 </div>
@@ -60,7 +60,7 @@ $session = session()
                         <div class="card-body">
                             <h5 class="card-title"><i class="bi bi-chat-left"></i> Solicitudes</h5>
                             <p class="card-text">Gestiona las solicitudes de donación.</p>
-                            <a href="<?= base_url('admin/solicitudes') ?>" class="btn btn-primary"><i class="bi bi-chat-left"></i> Ver Solicitudes</a>
+                            <a href="<?= base_url('Admin/admin_solicitudes') ?>" class="btn btn-primary"><i class="bi bi-chat-left"></i> Ver Solicitudes</a>
                         </div>
                     </div>
                 </div>
@@ -81,7 +81,7 @@ $session = session()
                         <div class="card-body">
                             <h5 class="card-title"><i class="bi bi-file-earmark-post"></i> Postulaciones</h5>
                             <p class="card-text">Gestiona las postulaciones de voluntarios.</p>
-                            <a href="<?= base_url('admin/postulaciones') ?>" class="btn btn-primary"><i class="bi bi-file-earmark-post"></i> Ver Postulaciones</a>
+                            <a href="<?= base_url('Admin/admin_postulaciones') ?>" class="btn btn-primary"><i class="bi bi-file-earmark-post"></i> Ver Postulaciones</a>
                         </div>
                     </div>
                 </div>

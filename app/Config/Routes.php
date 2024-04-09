@@ -15,54 +15,65 @@ $routes->post('Auth/login', 'Auth\AuthController::login');
 $routes->get('Auth/register', 'Auth\AuthController::showRegistrationForm');
 $routes->post('Auth/register', 'Auth\AuthController::register');
 $routes->get('Auth/logout', 'Auth\AuthController::logout');
-
+//----------------------------------------------------------
+//---------------------ADMINISTRADOR------------------------
+//----------------------------------------------------------
 //dashboard routes
 $routes->get('Admin/admin_dashboard', 'Admin\AdminController::dashboard', ['as' => 'admin.dashboard']);
 $routes->get('Admin/admin_donaciones', 'Admin\AdminController::donaciones', ['as' => 'admin.donaciones']);
 $routes->get('Admin/admin_postulaciones', 'Admin\AdminController::postulaciones', ['as' => 'admin.postulaciones']);
 $routes->get('Admin/admin_solicitudes', 'Admin\AdminController::solicitudes', ['as' => 'admin.solicitudes']);
 $routes->get('Admin/admin_usuarios', 'Admin\AdminController::usuarios', ['as' => 'admin.usuarios']);
+//admin usuarios
+$routes->get('Admin/editar_usuario/(:num)', 'Admin\AdminController::editar_usuario/$1');
+$routes->get('Admin/eliminar_usuario/(:num)', 'Admin\AdminController::eliminar_usuario/$1');
+$routes->post('Admin/editar_usuario/actualizar_usuario', 'Admin\AdminController::actualizar_usuario');
+$routes->get('Admin/crear_usuario/', 'Admin\AdminController::crear_usuario');
+$routes->post('Admin/guardar_usuario/', 'Admin\AdminController::guardar_usuario');
+// admin donaciones 
+$routes->get('Admin/admin_donaciones/aceptar/(:num)', 'Admin\AdminController::aceptar_donacion/$1');
+$routes->get('Admin/admin_donaciones/rechazar/(:num)', 'Admin\AdminController::rechazar_donacion/$1');
+$routes->get('Admin/admin_donaciones/detalles/(:num)', 'Admin\AdminController::detalles_donacion/$1');
+$routes->get('Admin/admin_donaciones/entregada/(:num)', 'Admin\AdminController::entregar_donacion/$1');
+$routes->get('Admin/admin_donaciones/cancelada/(:num)', 'Admin\AdminController::cancelar_donacion/$1');
+$routes->get('Admin/admin_donaciones/pendiente/(:num)', 'Admin\AdminController::pendiente_donacion/$1');
+$routes->get('Admin/admin_donaciones/pendientes/(:num)', 'Admin\AdminController::pendientes_donacion/$1');
+//admin solicitud
+$routes->get('Admin/admin_solicitudes/solicitudes_aceptar/(:num)', 'Admin\AdminController::solicitudes_aceptar/$1');
+$routes->get('Admin/admin_solicitudes/solicitudes_rechazar/(:num)', 'Admin\AdminController::solicitudes_rechazar/$1');
+$routes->get('Admin/admin_solicitudes/solicitudes_pendiente/(:num)', 'Admin\AdminController::solicitudes_pendiente/$1');
+
+// admin postulaciones
+$routes->get('Admin/admin_postulacion/aceptar_postulacion/(:num)', 'Admin\AdminController::aceptar_postulacion/$1');
+$routes->get('Admin/admin_postulacion/rechazar_postulacion/(:num)', 'Admin\AdminController::rechazar_postulacion/$1');
+$routes->get('Admin/admin_postulacion/pendiente_postulacion/(:num)', 'Admin\AdminController::pendiente_postulacion/$1');
+//----------------------------------------------------------
+//----------------------VOLUNTARIO--------------------------
+//----------------------------------------------------------
+$routes->get('Voluntario/voluntario_dashboard', 'Voluntario\VoluntarioController::dashboard', ['as' => 'voluntario.dashboard']);
+$routes->get('Voluntario/voluntario_postulaciones', 'Voluntario\VoluntarioController::voluntario_postulacion');
+$routes->get('Voluntario/voluntario_postulacion/postular_recojo/(:num)', 'Voluntario\VoluntarioController::postular_recojo/$1');
+$routes->get('Voluntario/voluntario_postulacion/postular_entrega/(:num)', 'Voluntario\VoluntarioController::postular_entrega/$1');
+$routes->get('Voluntario/voluntario_postulacion/mandar_mensaje/(:num)', 'Voluntario\VoluntarioController::mandar_mensaje/$1');
+$routes->post('Voluntario/voluntario_postulacion/mandar_mensaje/(:num)', 'Voluntario\VoluntarioController::mandar_mensaje/$1');
+$routes->get('Voluntario/voluntario_mensajes', 'Voluntario\VoluntarioController::voluntario_mensajes');
+$routes->post('Voluntario/responder_mensajes/(:num)', 'Voluntario\VoluntarioController::recResMensajes/$1');
+//----------------------------------------------------------
+//----------------------DONANTE--------------------------
+//----------------------------------------------------------
 
 $routes->get('Donante/donante_dashboard', 'Donante\DonanteController::dashboard', ['as' => 'donante.dashboard']);
+$routes->get('Donante/donante_donaciones', 'Donante\DonanteController::donDonaciones');
+$routes->get('Donante/donante_solicitudes', 'Donante\DonanteController::donSolicitudes');
+$routes->get('Donante/donante_mensajes', 'Donante\DonanteController::donMensajes');
+$routes->post('Donante/responder_mensajes/(:num)', 'Donante\DonanteController::recResMensajes/$1');
+$routes->get('Donante/donante_perfil', 'Donante\DonanteController::donPerfil');
+//----------------------------------------------------------
+//----------------------RECEPTOR--------------------------
+//----------------------------------------------------------
 $routes->get('Receptor/receptor_dashboard', 'Receptor\ReceptorController::dashboard', ['as' => 'receptor.dashboard']);
-$routes->get('Voluntario/voluntario_dashboard', 'Voluntario\VoluntarioController::dashboard', ['as' => 'voluntario.dashboard']);
-
-
-// // Rutas para el panel de administración
-// $routes->group('admin', ['filter' => 'adminFilter'], function ($routes) {
-//     $routes->get('dashboard', 'Admin\AdminController::dashboard');
-//     $routes->resource('usuarios', ['controller' => 'Admin\AdminController']);
-//     $routes->resource('donaciones', ['controller' => 'Admin\AdminController']);
-//     $routes->resource('solicitudes', ['controller' => 'Admin\AdminController']);
-//     $routes->resource('postulaciones', ['controller' => 'Admin\AdminController']);
-//     // Otras rutas relacionadas con el panel de administración
-// });
-
-// // Rutas para donantes
-// $routes->group('donantes', ['filter' => 'donanteFilter'], function ($routes) {
-//     $routes->get('dashboard', 'Donante\DonanteController::dashboard');
-//     $routes->resource('donaciones', ['controller' => 'Donante\DonanteController']);
-//     $routes->resource('solicitudes', ['controller' => 'Donante\DonanteController']);
-//     $routes->get('perfil', 'Donante\DonanteController::showPerfil');
-//     $routes->post('perfil', 'Donante\DonanteController::updatePerfil');
-//     // Otras rutas relacionadas con donantes
-// });
-
-// // Rutas para receptores
-// $routes->group('receptores', ['filter' => 'receptorFilter'], function ($routes) {
-//     $routes->get('dashboard', 'Receptor\ReceptorController::dashboard');
-//     $routes->resource('solicitudes', ['controller' => 'Receptor\ReceptorController']);
-//     $routes->resource('donaciones', ['controller' => 'Receptor\ReceptorController']);
-//     $routes->get('perfil', 'Receptor\ReceptorController::showPerfil');
-//     $routes->post('perfil', 'Receptor\ReceptorController::updatePerfil');
-//     // Otras rutas relacionadas con receptores
-// });
-
-// // Rutas para voluntarios
-// $routes->group('voluntarios', ['filter' => 'voluntarioFilter'], function ($routes) {
-//     $routes->get('dashboard', 'Voluntario\VoluntarioController::dashboard');
-//     $routes->resource('postulaciones', ['controller' => 'Voluntario\VoluntarioController']);
-//     $routes->get('perfil', 'Voluntario\VoluntarioController::showPerfil');
-//     $routes->post('perfil', 'Voluntario\VoluntarioController::updatePerfil');
-//     // Otras rutas relacionadas con voluntarios
-// });
+$routes->get('Receptor/receptor_solicitudes', 'Receptor\ReceptorController::recSolicitudes');
+$routes->get('Receptor/receptor_donaciones', 'Receptor\ReceptorController::recDonaciones');
+$routes->get('Receptor/receptor_mensajes', 'Receptor\ReceptorController::recMensajes');
+$routes->post('Receptor/responder_mensajes/(:num)', 'Receptor\ReceptorController::recResMensajes/$1');
+$routes->get('Receptor/receptor_perfil', 'Receptor\ReceptorController::recPerfil');
