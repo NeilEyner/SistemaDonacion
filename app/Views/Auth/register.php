@@ -3,16 +3,27 @@
 <body class="">
     <!-- Barra de navegación -->
 
-
     <!-- Contenido principal -->
     <main>
-        <form action="<?= route_to('Auth.register') ?>" method="post">
-            <div class="container mt-5">
-                <div class="row justify-content-center">
-                    <div class="col-md-6">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title mb-4">Registro</h5>
+        <div class="container mt-5">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>Registro</h4>
+                        </div>
+                        <div class="card-body">
+                            <?php if (session()->has('errors')) : ?>
+                                <div class="alert alert-danger">
+                                    <ul>
+                                        <?php foreach (session('errors') as $error) : ?>
+                                            <li><?= esc($error) ?></li>
+                                        <?php endforeach; ?>
+                                    </ul>
+                                </div>
+                            <?php endif; ?>
+
+                            <form action="<?= route_to('Auth.register') ?>" method="post">
                                 <div class="form-group">
                                     <label for="nombre"><i class="fas fa-user"></i> Nombre</label>
                                     <input type="text" name="nombre" id="nombre" class="form-control" value="<?= old('nombre') ?>" required>
@@ -39,9 +50,8 @@
                                     </select>
                                 </div>
 
-
                                 <!-- Campos adicionales para Donante -->
-                                <div id="donante-campos" style="display: none;">
+                                <div id="donante-campos" class="campos-adicionales" style="display: none;">
                                     <div class="form-group">
                                         <label for="direccion">Dirección</label>
                                         <input type="text" name="direccion" id="direccion" class="form-control">
@@ -65,7 +75,7 @@
                                 </div>
 
                                 <!-- Campos adicionales para Receptor -->
-                                <div id="receptor-campos" style="display: none;">
+                                <div id="receptor-campos" class="campos-adicionales" style="display: none;">
                                     <div class="form-group">
                                         <label for="direccion">Dirección</label>
                                         <input type="text" name="direccion" id="direccion" class="form-control">
@@ -89,7 +99,7 @@
                                 </div>
 
                                 <!-- Campos adicionales para Voluntario -->
-                                <div id="voluntario-campos" style="display: none;">
+                                <div id="voluntario-campos" class="campos-adicionales" style="display: none;">
                                     <div class="form-group">
                                         <label for="experiencia_laboral">Experiencia Laboral</label>
                                         <textarea name="experiencia_laboral" id="experiencia_laboral" class="form-control"></textarea>
@@ -100,36 +110,32 @@
                                     </div>
                                 </div>
 
-                                <button type="submit" class="btn btn-primary">Registrarse</button>
-                            </div>
+                                <button type="submit" class="btn btn-primary btn-block">Registrarse</button>
+                            </form>
                         </div>
                     </div>
                 </div>
             </div>
-        </form>
+        </div>
 
         <script>
             // Función para mostrar campos adicionales según el tipo de usuario seleccionado
             document.getElementById('tipo').addEventListener('change', function() {
-                var donanteCampos = document.getElementById('donante-campos');
-                var receptorCampos = document.getElementById('receptor-campos');
-                var voluntarioCampos = document.getElementById('voluntario-campos');
-
-                donanteCampos.style.display = 'none';
-                receptorCampos.style.display = 'none';
-                voluntarioCampos.style.display = 'none';
+                var camposAdicionales = document.querySelectorAll('.campos-adicionales');
+                camposAdicionales.forEach(function(campos) {
+                    campos.style.display = 'none';
+                });
 
                 var tipoSeleccionado = this.value;
                 if (tipoSeleccionado === 'Donante') {
-                    donanteCampos.style.display = 'block';
+                    document.getElementById('donante-campos').style.display = 'block';
                 } else if (tipoSeleccionado === 'Receptor') {
-                    receptorCampos.style.display = 'block';
+                    document.getElementById('receptor-campos').style.display = 'block';
                 } else if (tipoSeleccionado === 'Voluntario') {
-                    voluntarioCampos.style.display = 'block';
+                    document.getElementById('voluntario-campos').style.display = 'block';
                 }
             });
         </script>
-
     </main>
 
     <!-- Pie de página -->

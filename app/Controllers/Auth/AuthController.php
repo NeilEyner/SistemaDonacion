@@ -7,6 +7,7 @@ use App\Models\UsuarioModel;
 use App\Models\Donante\DonanteModel;
 use App\Models\Receptor\ReceptorModel;
 use App\Models\Voluntario\VoluntarioModel;
+
 class AuthController extends BaseController
 {
     public function showLoginForm()
@@ -26,28 +27,33 @@ class AuthController extends BaseController
             'username' => 'required',
             'password' => 'required',
         ]);
-    
+
         if (!$validation) {
             // Si la validación falla, redirigir de vuelta al formulario con los errores
             return redirect()->back()->withInput()->with('errors', ['Por favor, completa todos los campos']);
         }
-    
+
         // Obtener los datos del formulario
-        $username = $this->request->getPost('username');
-        $password = $this->request->getPost('password');
-    
+        $usuario = $this->request->getPost('username');
+        $contrasena = $this->request->getPost('password');
+
         // Verificar si el usuario existe
         $userModel = new UsuarioModel();
-        $user = $userModel->where('usuario', $username)->first();
-    
+        $user = $userModel->where('Usuario', $usuario)->first();
+
         if (!$user) {
             return redirect()->back()->withInput()->with('errors', ['El usuario no existe']);
         }
 
-        if ($password !== $user['Contrasena']) {
-            return redirect()->back()->withInput()->with('errors', ['Contrasena incorrecta']);
+        if (!$user['Habilitado']) {
+            return redirect()->back()->withInput()->with('errors', ['El usuario no está habilitado']);
         }
-    
+
+        // Verificar la contraseña
+        if (!password_verify($contrasena, $user['Contrasena'])) {
+            return redirect()->back()->withInput()->with('errors', ['Contraseña incorrecta']);
+        }
+
         // Almacenar los datos del usuario en la sesión
         $sessionData = [
             'userId' => $user['IDUsuario'],
@@ -55,11 +61,11 @@ class AuthController extends BaseController
             'userName' => $user['Nombre'],
             'isLoggedIn' => true,
         ];
-    
+
         // Establecer la sesión del usuario
         session()->start();
         session()->set('loggedUser', $sessionData);
-    
+
         // Redirigir al panel de control según el rol del usuario
         switch ($user['Rol']) {
             case 'Administrador':
@@ -74,7 +80,8 @@ class AuthController extends BaseController
                 return redirect()->route('home');
         }
     }
-    
+
+
 
     public function logout()
     {
@@ -88,23 +95,28 @@ class AuthController extends BaseController
     public function register()
     {
         $usuarioModel = new UsuarioModel();
+        $name = $this->request->getPost('nombre');
+        $user = $this->request->getPost('usuario');
+        $email = $this->request->getPost('correo');
+        $password =  $this->request->getPost('contrasena');
+        $password = password_hash($password, PASSWORD_BCRYPT);
+        $role = $this->request->getPost('tipo'); // Rol por defecto
+        $hab = false;
 
-        // Obtener datos del formulario
         $dataUsuario = [
-            'Nombre' => $this->request->getPost('nombre'),
-            'Usuario' => $this->request->getPost('usuario'),
-            'CorreoElectronico' => $this->request->getPost('correo'),
-            'Contrasena' =>  $this->request->getPost('contrasena'),
-            'Rol' => 'Voluntario', // Rol por defecto
-            'Habilitado' => true // Usuario habilitado por defecto
+            'Nombre' => $name,
+            'Usuario' => $user,
+            'CorreoElectronico' => $email,
+            'Contrasena' => $password,
+            'Rol' => $role,
+            'Habilitado' => $hab
         ];
 
         // Guardar usuario en la base de datos
         $usuarioID = $usuarioModel->insert($dataUsuario);
 
         // Determinar el tipo de usuario y guardar información adicional según el tipo
-        $tipoUsuario = $this->request->getPost('tipo');
-        switch ($tipoUsuario) {
+        switch ($role) {
             case 'Donante':
                 $donanteModel = new DonanteModel();
                 $dataDonante = [
@@ -146,7 +158,6 @@ class AuthController extends BaseController
                 break;
         }
 
-        // Redireccionar a una página de éxito o mostrar un mensaje de éxito
         return redirect()->to('Auth/login');
     }
 
@@ -158,7 +169,4 @@ class AuthController extends BaseController
     {
         return view('Auth/register');
     }
-
-
-
 }
