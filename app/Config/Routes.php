@@ -7,6 +7,7 @@ use CodeIgniter\Router\RouteCollection;
  */
 
 $routes->get('/', 'HomeController::index', ['as' => 'home']);
+// $routes->get('data/dashboard-default', 'HomeController::index2');
 $routes->get('contacto', 'HomeController::contacto');
 
 //login - register
@@ -68,6 +69,15 @@ $routes->get('Donante/donante_solicitudes', 'Donante\DonanteController::donSolic
 $routes->get('Donante/donante_mensajes', 'Donante\DonanteController::donMensajes');
 $routes->post('Donante/responder_mensajes/(:num)', 'Donante\DonanteController::recResMensajes/$1');
 $routes->get('Donante/donante_perfil', 'Donante\DonanteController::donPerfil');
+
+
+$routes->get('Donante/donante_solicitudes/donarSol/(:num)', 'Donante\DonanteController::donarSol/$1');
+$routes->post('Forms/_form_agregar/addDon/(:num)', 'Donante\DonanteController::addDon/$1');
+$routes->post('Forms/_form_agregar/continuar/(:num)', 'Donante\DonanteController::addproal/$1');
+$routes->get('Forms/_form_agregar/continuar/(:num)', 'Donante\DonanteController::addproal/$1');
+$routes->post('Forms/_form_agregar/addAlimento/(:num)', 'Donante\DonanteController::addAlimento/$1');
+$routes->post('Forms/_form_agregar/addProducto/(:num)', 'Donante\DonanteController::addProducto/$1');
+
 //----------------------------------------------------------
 //----------------------RECEPTOR--------------------------
 //----------------------------------------------------------
@@ -77,3 +87,6 @@ $routes->get('Receptor/receptor_donaciones', 'Receptor\ReceptorController::recDo
 $routes->get('Receptor/receptor_mensajes', 'Receptor\ReceptorController::recMensajes');
 $routes->post('Receptor/responder_mensajes/(:num)', 'Receptor\ReceptorController::recResMensajes/$1');
 $routes->get('Receptor/receptor_perfil', 'Receptor\ReceptorController::recPerfil');
+
+$routes->get('Forms/_form_solicitud', 'Receptor\ReceptorController::formSolicitud');
+$routes->post('Forms/_form_solicitud/guardar_solicitud', 'Receptor\ReceptorController::guardar_solicitud');

@@ -64,7 +64,7 @@
                                             <li><a class="dropdown-item" href="<?php echo base_url('/Receptor/receptor_dashboard') ?>">Panel de Control</a></li>
                                             <li><a class="dropdown-item" href="<?php echo base_url('/Receptor/receptor_solicitudes') ?>">Mis Solicitudes</a></li>
                                             <li><a class="dropdown-item" href="<?php echo base_url('/Receptor/receptor_donaciones') ?>">Donaciones Recibidas</a></li>
-                                            <li><a class="dropdown-item" href="<?php echo base_url('/Receptor/receptor_mensakes') ?>">Mensajes</a></li>
+                                            <li><a class="dropdown-item" href="<?php echo base_url('/Receptor/receptor_mensajes') ?>">Mensajes</a></li>
                                             <li><a class="dropdown-item" href="<?php echo base_url('/Receptor/receptor_perfil') ?>">Mi Perfil</a></li>
                                         <?php
                                             break;

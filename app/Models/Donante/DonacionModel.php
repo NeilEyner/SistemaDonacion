@@ -47,5 +47,6 @@ class DonacionModel extends Model
 
         return $this->where('IDDonante',$id)->findAll(); 
     }
+    
 
 }

@@ -22,4 +22,8 @@ class HomeController extends BaseController
     {
         return view('home/contacto');
     }
+    public function index2()
+    {
+        return view('data/dashboard-default');
+    }
 }

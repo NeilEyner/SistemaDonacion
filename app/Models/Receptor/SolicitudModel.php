@@ -16,10 +16,22 @@ class SolicitudModel extends Model
     public function getSolicitud(){
         return $this->findAll();
     }
+    public function getSolicitudID($id)
+    {
+        return $this->where('IDReceptor', $id)->findAll();
+    }
     public function getSolicitudAceptada()
     {
         return $this->where('EstadoSolicitud', 'Aceptada')->findAll();
+    }public function getSolicitudAceptadaNorecp()
+    {
+        return $this->where('EstadoSolicitud', 'Aceptada')->where('ConfirmacionRecepcion', 0)->findAll();
     }
+    public function getSolicitudAceptadaID($id)
+    {
+        return $this->where('EstadoSolicitud', 'Aceptada')->where('IDReceptor', $id)->findAll();
+    }
+
     public function getSolicitudRechazada()
     {
         return $this->where('EstadoSolicitud', 'Rechazada')->findAll();
@@ -28,5 +40,10 @@ class SolicitudModel extends Model
     {
         return $this->where('EstadoSolicitud', 'Pendiente')->findAll();
     }
-
+    public function getDonacionesPorReceptor($IDReceptor)
+    {
+        return $this->hasMany('DonacionModel', 'IDSolicitud')
+                    ->where('IDReceptor', $IDReceptor)
+                    ->findAll();
+    }
 }
