@@ -72,7 +72,7 @@ $session = session()
                 <p>Fecha de la solicitud: <?= isset($solicitud['FechaSolicitud']) ? $solicitud['FechaSolicitud'] : 'No disponible' ?></p>
                 <p>Estado de la solicitud: <?= isset($solicitud['EstadoSolicitud']) ? $solicitud['EstadoSolicitud'] : 'No disponible' ?></p>
                 <p>Cantidad solicitada: <?= isset($solicitud['Cantidad']) ? $solicitud['Cantidad'] : 'No disponible' ?></p>
-                <!-- Ajusta esto según la estructura real de tu solicitud -->
+                
 
 
             </div>

@@ -26,7 +26,7 @@
                     <div class="col-md-4 mb-3">
                         <div class="card">
                             <?php if (isset($donacion['ImagenDonacion']) && !empty($donacion['ImagenDonacion'])) : ?>
-                                <img src="<?= base_url('uploads/' . $donacion['ImagenDonacion']) ?>" class="card-img-top" alt="Imagen de donación">
+                                <!-- <img src="<?= base_url('uploads/' . $donacion['ImagenDonacion']) ?>" class="card-img-top" alt="Imagen de donación"> -->
                             <?php endif; ?>
                             <div class="card-body">
                                 <h5 class="card-title"><?= $donacion['IDDonacion'] ?></h5>
@@ -53,7 +53,7 @@
                                     </span><br>
                                     <strong>Tipo:</strong> <?= $donacion['TipoDeDonacion'] ?>
                                 </p>
-                                <a href="#" class="btn btn-primary">Ver detalles</a>
+                                <!-- <a href="#" class="btn btn-primary">Ver detalles</a> -->
                             </div>
                         </div>
                     </div>

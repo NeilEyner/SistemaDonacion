@@ -1,0 +1,489 @@
+INFO - 2024-04-24 14:22:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-24 14:22:17 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH\Controllers\Voluntario\VoluntarioController.php on line 22.
+ 1 APPPATH\Controllers\Voluntario\VoluntarioController.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\SistemaDonacionBolivia\\app\\Controllers\\Voluntario\\VoluntarioController.php', 22)
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Voluntario\VoluntarioController->dashboard()
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Voluntario\VoluntarioController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-24 14:22:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 14:22:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-04-24 14:22:32 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-04-24 14:22:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 21:35:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-24 21:35:57 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH\Controllers\Voluntario\VoluntarioController.php on line 22.
+ 1 APPPATH\Controllers\Voluntario\VoluntarioController.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\SistemaDonacionBolivia\\app\\Controllers\\Voluntario\\VoluntarioController.php', 22)
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Voluntario\VoluntarioController->dashboard()
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Voluntario\VoluntarioController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-24 21:36:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-24 21:36:00 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH\Controllers\Voluntario\VoluntarioController.php on line 22.
+ 1 APPPATH\Controllers\Voluntario\VoluntarioController.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\SistemaDonacionBolivia\\app\\Controllers\\Voluntario\\VoluntarioController.php', 22)
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Voluntario\VoluntarioController->dashboard()
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Voluntario\VoluntarioController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-24 21:36:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 21:36:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-04-24 21:36:06 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-04-24 21:36:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 21:36:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 21:36:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 21:36:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 21:36:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 21:42:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-24 21:42:02 --> ErrorException: Undefined variable $solicitud_donacion
+in APPPATH\Views\Voluntario\voluntario_postulaciones.php on line 57.
+ 1 APPPATH\Views\Voluntario\voluntario_postulaciones.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $solicitud_donacion', 'C:\\xampp\\htdocs\\SistemaDonacionBolivia\\app\\Views\\Voluntario\\voluntario_postulaciones.php', 57)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\SistemaDonacionBolivia\\app\\Views\\Voluntario\\voluntario_postulaciones.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Voluntario/voluntario_postulaciones', [], true)
+ 5 APPPATH\Controllers\Voluntario\VoluntarioController.php(54): view('Voluntario/voluntario_postulaciones', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Voluntario\VoluntarioController->voluntario_postulacion()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Voluntario\VoluntarioController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-24 21:42:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-24 21:42:56 --> ErrorException: Undefined array key "FechaSolicitud"
+in APPPATH\Views\Voluntario\voluntario_postulaciones.php on line 57.
+ 1 APPPATH\Views\Voluntario\voluntario_postulaciones.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "FechaSolicitud"', 'C:\\xampp\\htdocs\\SistemaDonacionBolivia\\app\\Views\\Voluntario\\voluntario_postulaciones.php', 57)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\SistemaDonacionBolivia\\app\\Views\\Voluntario\\voluntario_postulaciones.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Voluntario/voluntario_postulaciones', [], true)
+ 5 APPPATH\Controllers\Voluntario\VoluntarioController.php(54): view('Voluntario/voluntario_postulaciones', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Voluntario\VoluntarioController->voluntario_postulacion()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Voluntario\VoluntarioController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-24 21:43:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 21:43:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-24 21:43:27 --> ErrorException: Undefined array key "FechaSolicitud"
+in APPPATH\Views\Voluntario\voluntario_postulaciones.php on line 57.
+ 1 APPPATH\Views\Voluntario\voluntario_postulaciones.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "FechaSolicitud"', 'C:\\xampp\\htdocs\\SistemaDonacionBolivia\\app\\Views\\Voluntario\\voluntario_postulaciones.php', 57)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\SistemaDonacionBolivia\\app\\Views\\Voluntario\\voluntario_postulaciones.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Voluntario/voluntario_postulaciones', [], true)
+ 5 APPPATH\Controllers\Voluntario\VoluntarioController.php(54): view('Voluntario/voluntario_postulaciones', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Voluntario\VoluntarioController->voluntario_postulacion()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Voluntario\VoluntarioController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-24 21:44:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 21:44:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 21:45:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 21:45:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 21:45:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 21:45:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 21:45:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 21:45:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-04-24 21:45:29 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-04-24 21:45:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 21:45:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 21:46:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 21:46:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 21:47:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 21:47:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 21:47:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 21:48:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 21:48:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 21:48:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 21:49:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 21:49:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 21:53:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 21:53:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 21:55:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-24 21:55:46 --> ParseError: syntax error, unexpected token "return", expecting variable or "{" or "$"
+in APPPATH\Controllers\Voluntario\VoluntarioController.php on line 56.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(290): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\SistemaDonacionBolivia\\app\\Controllers\\Voluntario\\VoluntarioController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Voluntario\\VoluntarioController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Voluntario\\VoluntarioController')
+ 4 SYSTEMPATH\CodeIgniter.php(901): class_exists('\\App\\Controllers\\Voluntario\\VoluntarioController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-24 21:57:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 21:57:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 21:57:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 21:57:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 21:59:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-24 21:59:21 --> ErrorException: Undefined variable $participaciones
+in APPPATH\Views\Voluntario\voluntario_postulaciones.php on line 130.
+ 1 APPPATH\Views\Voluntario\voluntario_postulaciones.php(130): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $participaciones', 'C:\\xampp\\htdocs\\SistemaDonacionBolivia\\app\\Views\\Voluntario\\voluntario_postulaciones.php', 130)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\SistemaDonacionBolivia\\app\\Views\\Voluntario\\voluntario_postulaciones.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Voluntario/voluntario_postulaciones', [], true)
+ 5 APPPATH\Controllers\Voluntario\VoluntarioController.php(57): view('Voluntario/voluntario_postulaciones', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Voluntario\VoluntarioController->voluntario_postulacion()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Voluntario\VoluntarioController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-24 21:59:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 22:01:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 22:01:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 22:01:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 22:01:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-04-24 22:01:44 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-04-24 22:01:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 22:01:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 22:02:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 22:02:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 22:06:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 22:06:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 22:06:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 22:06:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 22:06:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 22:06:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 22:06:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 22:08:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 22:08:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 22:08:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 22:08:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 22:09:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 22:09:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 22:09:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 22:12:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 22:12:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 22:13:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 22:13:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 22:16:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 22:16:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 22:16:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 22:16:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 22:16:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 22:16:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 22:16:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 22:16:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 22:16:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 22:17:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 22:18:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 22:18:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 22:18:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 22:18:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 22:18:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 22:18:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 22:28:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-04-24 22:28:43 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`donaciondb`.`participacionvoluntario`, CONSTRAINT `participacionvoluntario_ibfk_2` FOREIGN KEY (`IDDonacion`) REFERENCES `donacion` (`IDDonacion`) ON DELETE CASCADE) in C:\xampp\htdocs\SistemaDonacionBolivia\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\SistemaDonacionBolivia\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `Pa...', 0)
+#1 C:\xampp\htdocs\SistemaDonacionBolivia\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Pa...')
+#2 C:\xampp\htdocs\SistemaDonacionBolivia\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Pa...')
+#3 C:\xampp\htdocs\SistemaDonacionBolivia\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Pa...', Array, false)
+#4 C:\xampp\htdocs\SistemaDonacionBolivia\system\Model.php(327): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\SistemaDonacionBolivia\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\SistemaDonacionBolivia\system\Model.php(749): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\SistemaDonacionBolivia\system\BaseModel.php(713): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\SistemaDonacionBolivia\app\Controllers\Voluntario\VoluntarioController.php(79): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\SistemaDonacionBolivia\system\CodeIgniter.php(943): App\Controllers\Voluntario\VoluntarioController->postularResponsable('32')
+#10 C:\xampp\htdocs\SistemaDonacionBolivia\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Voluntario\VoluntarioController))
+#11 C:\xampp\htdocs\SistemaDonacionBolivia\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\SistemaDonacionBolivia\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2024-04-24 22:28:43 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`donaciondb`.`participacionvoluntario`, CONSTRAINT `participacionvoluntario_ibfk_2` FOREIGN KEY (`IDDonacion`) REFERENCES `donacion` (`IDDonacion`) ON DELETE CASCADE)
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ParticipacionVoluntario` (`IDVoluntario`, `IDDonacion`, `TipoOperacion`, `FechaHora`, `CantidadColaboradores`, `ConformidadEntrega`) VALUES (:IDVoluntario:, :IDDonacion:, :TipoOperacion:, :FechaHora:, :CantidadColaboradores:, :ConformidadEntrega:)', [...], false)
+ 2 SYSTEMPATH\Model.php(327): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(749): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(713): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\Voluntario\VoluntarioController.php(79): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Voluntario\VoluntarioController->postularResponsable('32')
+ 8 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Voluntario\VoluntarioController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-24 22:28:43 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`donaciondb`.`participacionvoluntario`, CONSTRAINT `participacionvoluntario_ibfk_2` FOREIGN KEY (`IDDonacion`) REFERENCES `donacion` (`IDDonacion`) ON DELETE CASCADE)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ParticipacionVoluntario` (`IDVoluntario`, `IDDonacion`, `TipoOperacion`, `FechaHora`, `CantidadColaboradores`, `ConformidadEntrega`) VALUES (\'4\', \'32\', \'Entrega\', \'2024-04-18T22:24\', \'3\', \'Pendiente\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ParticipacionVoluntario` (`IDVoluntario`, `IDDonacion`, `TipoOperacion`, `FechaHora`, `CantidadColaboradores`, `ConformidadEntrega`) VALUES (\'4\', \'32\', \'Entrega\', \'2024-04-18T22:24\', \'3\', \'Pendiente\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ParticipacionVoluntario` (`IDVoluntario`, `IDDonacion`, `TipoOperacion`, `FechaHora`, `CantidadColaboradores`, `ConformidadEntrega`) VALUES (:IDVoluntario:, :IDDonacion:, :TipoOperacion:, :FechaHora:, :CantidadColaboradores:, :ConformidadEntrega:)', [...], false)
+ 4 SYSTEMPATH\Model.php(327): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(749): CodeIgniter\BaseModel->insert([...], false)
+ 7 SYSTEMPATH\BaseModel.php(713): CodeIgniter\Model->insert([...], false)
+ 8 APPPATH\Controllers\Voluntario\VoluntarioController.php(79): CodeIgniter\BaseModel->save([...])
+ 9 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Voluntario\VoluntarioController->postularResponsable('32')
+10 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Voluntario\VoluntarioController))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-24 22:28:43 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`donaciondb`.`participacionvoluntario`, CONSTRAINT `participacionvoluntario_ibfk_2` FOREIGN KEY (`IDDonacion`) REFERENCES `donacion` (`IDDonacion`) ON DELETE CASCADE)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ParticipacionVoluntario` (`IDVoluntario`, `IDDonacion`, `TipoOperacion`, `FechaHora`, `CantidadColaboradores`, `ConformidadEntrega`) VALUES (\'4\', \'32\', \'Entrega\', \'2024-04-18T22:24\', \'3\', \'Pendiente\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ParticipacionVoluntario` (`IDVoluntario`, `IDDonacion`, `TipoOperacion`, `FechaHora`, `CantidadColaboradores`, `ConformidadEntrega`) VALUES (\'4\', \'32\', \'Entrega\', \'2024-04-18T22:24\', \'3\', \'Pendiente\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ParticipacionVoluntario` (`IDVoluntario`, `IDDonacion`, `TipoOperacion`, `FechaHora`, `CantidadColaboradores`, `ConformidadEntrega`) VALUES (\'4\', \'32\', \'Entrega\', \'2024-04-18T22:24\', \'3\', \'Pendiente\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ParticipacionVoluntario` (`IDVoluntario`, `IDDonacion`, `TipoOperacion`, `FechaHora`, `CantidadColaboradores`, `ConformidadEntrega`) VALUES (:IDVoluntario:, :IDDonacion:, :TipoOperacion:, :FechaHora:, :CantidadColaboradores:, :ConformidadEntrega:)', [...], false)
+ 5 SYSTEMPATH\Model.php(327): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(749): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(713): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\Voluntario\VoluntarioController.php(79): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Voluntario\VoluntarioController->postularResponsable('32')
+11 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Voluntario\VoluntarioController))
+12 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-24 22:29:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-04-24 22:29:11 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`donaciondb`.`participacionvoluntario`, CONSTRAINT `participacionvoluntario_ibfk_2` FOREIGN KEY (`IDDonacion`) REFERENCES `donacion` (`IDDonacion`) ON DELETE CASCADE) in C:\xampp\htdocs\SistemaDonacionBolivia\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\SistemaDonacionBolivia\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `Pa...', 0)
+#1 C:\xampp\htdocs\SistemaDonacionBolivia\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Pa...')
+#2 C:\xampp\htdocs\SistemaDonacionBolivia\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Pa...')
+#3 C:\xampp\htdocs\SistemaDonacionBolivia\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Pa...', Array, false)
+#4 C:\xampp\htdocs\SistemaDonacionBolivia\system\Model.php(327): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\SistemaDonacionBolivia\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\SistemaDonacionBolivia\system\Model.php(749): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\SistemaDonacionBolivia\app\Controllers\Voluntario\VoluntarioController.php(79): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\SistemaDonacionBolivia\system\CodeIgniter.php(943): App\Controllers\Voluntario\VoluntarioController->postularResponsable('32')
+#9 C:\xampp\htdocs\SistemaDonacionBolivia\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Voluntario\VoluntarioController))
+#10 C:\xampp\htdocs\SistemaDonacionBolivia\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\SistemaDonacionBolivia\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-04-24 22:29:11 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`donaciondb`.`participacionvoluntario`, CONSTRAINT `participacionvoluntario_ibfk_2` FOREIGN KEY (`IDDonacion`) REFERENCES `donacion` (`IDDonacion`) ON DELETE CASCADE)
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ParticipacionVoluntario` (`IDVoluntario`, `IDDonacion`, `TipoOperacion`, `FechaHora`, `CantidadColaboradores`, `ConformidadEntrega`) VALUES (:IDVoluntario:, :IDDonacion:, :TipoOperacion:, :FechaHora:, :CantidadColaboradores:, :ConformidadEntrega:)', [...], false)
+ 2 SYSTEMPATH\Model.php(327): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(749): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Voluntario\VoluntarioController.php(79): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Voluntario\VoluntarioController->postularResponsable('32')
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Voluntario\VoluntarioController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-24 22:29:11 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`donaciondb`.`participacionvoluntario`, CONSTRAINT `participacionvoluntario_ibfk_2` FOREIGN KEY (`IDDonacion`) REFERENCES `donacion` (`IDDonacion`) ON DELETE CASCADE)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ParticipacionVoluntario` (`IDVoluntario`, `IDDonacion`, `TipoOperacion`, `FechaHora`, `CantidadColaboradores`, `ConformidadEntrega`) VALUES (\'4\', \'32\', \'Entrega\', \'2024-04-18T22:24\', \'3\', \'Pendiente\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ParticipacionVoluntario` (`IDVoluntario`, `IDDonacion`, `TipoOperacion`, `FechaHora`, `CantidadColaboradores`, `ConformidadEntrega`) VALUES (\'4\', \'32\', \'Entrega\', \'2024-04-18T22:24\', \'3\', \'Pendiente\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ParticipacionVoluntario` (`IDVoluntario`, `IDDonacion`, `TipoOperacion`, `FechaHora`, `CantidadColaboradores`, `ConformidadEntrega`) VALUES (:IDVoluntario:, :IDDonacion:, :TipoOperacion:, :FechaHora:, :CantidadColaboradores:, :ConformidadEntrega:)', [...], false)
+ 4 SYSTEMPATH\Model.php(327): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(749): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\Voluntario\VoluntarioController.php(79): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Voluntario\VoluntarioController->postularResponsable('32')
+ 9 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Voluntario\VoluntarioController))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-24 22:29:11 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`donaciondb`.`participacionvoluntario`, CONSTRAINT `participacionvoluntario_ibfk_2` FOREIGN KEY (`IDDonacion`) REFERENCES `donacion` (`IDDonacion`) ON DELETE CASCADE)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ParticipacionVoluntario` (`IDVoluntario`, `IDDonacion`, `TipoOperacion`, `FechaHora`, `CantidadColaboradores`, `ConformidadEntrega`) VALUES (\'4\', \'32\', \'Entrega\', \'2024-04-18T22:24\', \'3\', \'Pendiente\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ParticipacionVoluntario` (`IDVoluntario`, `IDDonacion`, `TipoOperacion`, `FechaHora`, `CantidadColaboradores`, `ConformidadEntrega`) VALUES (\'4\', \'32\', \'Entrega\', \'2024-04-18T22:24\', \'3\', \'Pendiente\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ParticipacionVoluntario` (`IDVoluntario`, `IDDonacion`, `TipoOperacion`, `FechaHora`, `CantidadColaboradores`, `ConformidadEntrega`) VALUES (\'4\', \'32\', \'Entrega\', \'2024-04-18T22:24\', \'3\', \'Pendiente\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ParticipacionVoluntario` (`IDVoluntario`, `IDDonacion`, `TipoOperacion`, `FechaHora`, `CantidadColaboradores`, `ConformidadEntrega`) VALUES (:IDVoluntario:, :IDDonacion:, :TipoOperacion:, :FechaHora:, :CantidadColaboradores:, :ConformidadEntrega:)', [...], false)
+ 5 SYSTEMPATH\Model.php(327): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(749): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Voluntario\VoluntarioController.php(79): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Voluntario\VoluntarioController->postularResponsable('32')
+10 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Voluntario\VoluntarioController))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-24 22:35:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-24 22:35:07 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH\Controllers\Voluntario\VoluntarioController.php on line 70.
+ 1 APPPATH\Controllers\Voluntario\VoluntarioController.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\SistemaDonacionBolivia\\app\\Controllers\\Voluntario\\VoluntarioController.php', 70)
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Voluntario\VoluntarioController->postularResponsable('32')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Voluntario\VoluntarioController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-24 22:43:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-24 22:43:19 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH\Controllers\Voluntario\VoluntarioController.php on line 73.
+ 1 APPPATH\Controllers\Voluntario\VoluntarioController.php(73): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\SistemaDonacionBolivia\\app\\Controllers\\Voluntario\\VoluntarioController.php', 73)
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Voluntario\VoluntarioController->postularResponsable('32')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Voluntario\VoluntarioController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-24 22:43:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 22:45:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 22:45:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 22:45:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-24 22:45:38 --> ErrorException: Undefined variable $solicitud
+in APPPATH\Views\Voluntario\voluntario_postulaciones.php on line 39.
+ 1 APPPATH\Views\Voluntario\voluntario_postulaciones.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $solicitud', 'C:\\xampp\\htdocs\\SistemaDonacionBolivia\\app\\Views\\Voluntario\\voluntario_postulaciones.php', 39)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\SistemaDonacionBolivia\\app\\Views\\Voluntario\\voluntario_postulaciones.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Voluntario/voluntario_postulaciones', [], true)
+ 5 APPPATH\Controllers\Voluntario\VoluntarioController.php(61): view('Voluntario/voluntario_postulaciones', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Voluntario\VoluntarioController->voluntario_postulacion()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Voluntario\VoluntarioController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-24 22:45:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-24 22:45:40 --> ErrorException: Undefined variable $solicitud
+in APPPATH\Views\Voluntario\voluntario_postulaciones.php on line 39.
+ 1 APPPATH\Views\Voluntario\voluntario_postulaciones.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $solicitud', 'C:\\xampp\\htdocs\\SistemaDonacionBolivia\\app\\Views\\Voluntario\\voluntario_postulaciones.php', 39)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\SistemaDonacionBolivia\\app\\Views\\Voluntario\\voluntario_postulaciones.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Voluntario/voluntario_postulaciones', [], true)
+ 5 APPPATH\Controllers\Voluntario\VoluntarioController.php(61): view('Voluntario/voluntario_postulaciones', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Voluntario\VoluntarioController->voluntario_postulacion()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Voluntario\VoluntarioController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-24 22:45:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-24 22:45:57 --> ErrorException: Undefined variable $solicitud
+in APPPATH\Views\Voluntario\voluntario_postulaciones.php on line 35.
+ 1 APPPATH\Views\Voluntario\voluntario_postulaciones.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $solicitud', 'C:\\xampp\\htdocs\\SistemaDonacionBolivia\\app\\Views\\Voluntario\\voluntario_postulaciones.php', 35)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\SistemaDonacionBolivia\\app\\Views\\Voluntario\\voluntario_postulaciones.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Voluntario/voluntario_postulaciones', [], true)
+ 5 APPPATH\Controllers\Voluntario\VoluntarioController.php(61): view('Voluntario/voluntario_postulaciones', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Voluntario\VoluntarioController->voluntario_postulacion()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Voluntario\VoluntarioController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-24 22:46:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 22:46:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 22:46:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 22:46:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 22:48:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-24 22:48:24 --> ParseError: syntax error, unexpected token "endforeach", expecting "elseif" or "else" or "endif"
+in APPPATH\Views\Voluntario\voluntario_postulaciones.php on line 45.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Voluntario/voluntario_postulaciones', [], true)
+ 3 APPPATH\Controllers\Voluntario\VoluntarioController.php(61): view('Voluntario/voluntario_postulaciones', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Voluntario\VoluntarioController->voluntario_postulacion()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Voluntario\VoluntarioController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-24 22:48:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 22:50:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 22:51:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 22:51:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-24 22:51:09 --> ErrorException: Undefined variable $solicitud
+in APPPATH\Views\Voluntario\voluntario_postulaciones.php on line 46.
+ 1 APPPATH\Views\Voluntario\voluntario_postulaciones.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $solicitud', 'C:\\xampp\\htdocs\\SistemaDonacionBolivia\\app\\Views\\Voluntario\\voluntario_postulaciones.php', 46)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\SistemaDonacionBolivia\\app\\Views\\Voluntario\\voluntario_postulaciones.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Voluntario/voluntario_postulaciones', [], true)
+ 5 APPPATH\Controllers\Voluntario\VoluntarioController.php(61): view('Voluntario/voluntario_postulaciones', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Voluntario\VoluntarioController->voluntario_postulacion()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Voluntario\VoluntarioController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-24 22:51:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-24 22:51:34 --> ErrorException: Undefined variable $solicitud
+in APPPATH\Views\Voluntario\voluntario_postulaciones.php on line 46.
+ 1 APPPATH\Views\Voluntario\voluntario_postulaciones.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $solicitud', 'C:\\xampp\\htdocs\\SistemaDonacionBolivia\\app\\Views\\Voluntario\\voluntario_postulaciones.php', 46)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\SistemaDonacionBolivia\\app\\Views\\Voluntario\\voluntario_postulaciones.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Voluntario/voluntario_postulaciones', [], true)
+ 5 APPPATH\Controllers\Voluntario\VoluntarioController.php(61): view('Voluntario/voluntario_postulaciones', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Voluntario\VoluntarioController->voluntario_postulacion()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Voluntario\VoluntarioController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-24 22:52:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 22:52:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 22:53:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 22:53:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 22:53:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 22:53:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-24 22:53:37 --> ParseError: syntax error, unexpected token "endif"
+in APPPATH\Views\Voluntario\voluntario_postulaciones.php on line 45.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Voluntario/voluntario_postulaciones', [], true)
+ 3 APPPATH\Controllers\Voluntario\VoluntarioController.php(61): view('Voluntario/voluntario_postulaciones', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Voluntario\VoluntarioController->voluntario_postulacion()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Voluntario\VoluntarioController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-24 22:54:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 22:54:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 22:54:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 22:56:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-24 22:56:06 --> ParseError: syntax error, unexpected token "endforeach", expecting "elseif" or "else" or "endif"
+in APPPATH\Views\Voluntario\voluntario_postulaciones.php on line 98.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Voluntario/voluntario_postulaciones', [], true)
+ 3 APPPATH\Controllers\Voluntario\VoluntarioController.php(61): view('Voluntario/voluntario_postulaciones', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Voluntario\VoluntarioController->voluntario_postulacion()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Voluntario\VoluntarioController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-24 22:56:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 22:57:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 22:57:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 22:57:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 22:57:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 22:58:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 23:27:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 23:27:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 23:27:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 23:27:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 23:27:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 23:27:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 23:27:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-24 23:27:58 --> ErrorException: Undefined array key "Estad"
+in APPPATH\Views\Voluntario\voluntario_postulaciones.php on line 138.
+ 1 APPPATH\Views\Voluntario\voluntario_postulaciones.php(138): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Estad"', 'C:\\xampp\\htdocs\\SistemaDonacionBolivia\\app\\Views\\Voluntario\\voluntario_postulaciones.php', 138)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\SistemaDonacionBolivia\\app\\Views\\Voluntario\\voluntario_postulaciones.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Voluntario/voluntario_postulaciones', [], true)
+ 5 APPPATH\Controllers\Voluntario\VoluntarioController.php(61): view('Voluntario/voluntario_postulaciones', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Voluntario\VoluntarioController->voluntario_postulacion()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Voluntario\VoluntarioController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-24 23:28:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 23:28:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 23:28:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 23:28:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 23:28:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 23:28:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 23:28:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 23:28:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 23:28:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 23:28:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-24 23:28:53 --> ParseError: syntax error, unexpected token "<"
+in APPPATH\Views\Voluntario\voluntario_postulaciones.php on line 137.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Voluntario/voluntario_postulaciones', [], true)
+ 3 APPPATH\Controllers\Voluntario\VoluntarioController.php(61): view('Voluntario/voluntario_postulaciones', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Voluntario\VoluntarioController->voluntario_postulacion()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Voluntario\VoluntarioController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-24 23:29:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 23:29:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 23:30:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 23:30:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 23:30:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 23:30:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 23:31:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 23:31:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 23:31:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 23:31:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 23:31:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 23:31:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 23:31:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 23:31:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 23:31:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 23:31:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 23:32:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 23:32:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 23:32:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-24 23:32:08 --> ParseError: syntax error, unexpected identifier "Voluntario", expecting ")"
+in APPPATH\Config\Routes.php on line 57.
+ 1 SYSTEMPATH\CodeIgniter.php(811): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 2 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-24 23:33:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 23:33:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 23:34:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-24 23:34:55 --> Error: Call to a member function findAll() on null
+in APPPATH\Controllers\Voluntario\VoluntarioController.php on line 125.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Voluntario\VoluntarioController->voluntario_coordinacion()
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Voluntario\VoluntarioController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-24 23:40:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 23:54:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 23:55:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 23:55:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 23:55:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 23:55:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 23:55:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 23:56:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 23:57:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 23:57:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

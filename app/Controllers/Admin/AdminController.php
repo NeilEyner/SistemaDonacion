@@ -7,8 +7,7 @@ use App\Controllers\BaseController;
 use App\Models\UsuarioModel;
 use App\Models\Donante\DonacionModel;
 use App\Models\Receptor\SolicitudModel;
-
-
+use App\Models\Voluntario\ParticipacionModel;
 use App\Models\Voluntario\PostulacionModel;
 
 class AdminController extends BaseController
@@ -66,6 +65,9 @@ class AdminController extends BaseController
 
     public function postulaciones()
     {
+        $parti = new ParticipacionModel();
+        $data['participaciones'] = $parti -> findAll();
+
         $postulacionesModel = new PostulacionModel();
         $data['postulaciones'] = $postulacionesModel->getPostulacionesPendientes();
         $data['postulacionesAceptada'] = $postulacionesModel->getPostulacionesAceptada();
@@ -263,6 +265,21 @@ class AdminController extends BaseController
         $postulacionModel = new PostulacionModel();
         $postulacionModel->find($id);
         $postulacionModel->update($id, ['EstadoPostulacion' => 'Rechazada']);
+        return redirect()->to('Admin/admin_postulaciones');
+    }
+
+    //  postulacion - encargado
+
+    public function aceptar_participacion($id){
+        $postulacionModel = new ParticipacionModel();
+        $postulacionModel->find($id);
+        $postulacionModel->update($id, ['EstadoParticipacion' => 'Aceptada']);
+        return redirect()->to('Admin/admin_postulaciones');
+    }
+    public function rechazar_participacion($id){
+        $postulacionModel = new ParticipacionModel();
+        $postulacionModel->find($id);
+        $postulacionModel->update($id, ['EstadoParticipacion' => 'Rechazada']);
         return redirect()->to('Admin/admin_postulaciones');
     }
 }

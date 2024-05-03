@@ -7,7 +7,7 @@ use CodeIgniter\Router\RouteCollection;
  */
 
 $routes->get('/', 'HomeController::index', ['as' => 'home']);
-// $routes->get('data/dashboard-default', 'HomeController::index2');
+$routes->get('data/dashboard-default', 'HomeController::index2');
 $routes->get('contacto', 'HomeController::contacto');
 
 //login - register
@@ -48,6 +48,9 @@ $routes->get('Admin/admin_solicitudes/solicitudes_pendiente/(:num)', 'Admin\Admi
 $routes->get('Admin/admin_postulacion/aceptar_postulacion/(:num)', 'Admin\AdminController::aceptar_postulacion/$1');
 $routes->get('Admin/admin_postulacion/rechazar_postulacion/(:num)', 'Admin\AdminController::rechazar_postulacion/$1');
 $routes->get('Admin/admin_postulacion/pendiente_postulacion/(:num)', 'Admin\AdminController::pendiente_postulacion/$1');
+
+$routes->get('Admin/admin_participacion/aceptar_participacion/(:num)', 'Admin\AdminController::aceptar_participacion/$1');
+$routes->get('Admin/admin_participacion/rechazar_participacion/(:num)', 'Admin\AdminController::rechazar_participacion/$1');
 //----------------------------------------------------------
 //----------------------VOLUNTARIO--------------------------
 //----------------------------------------------------------
@@ -59,6 +62,20 @@ $routes->get('Voluntario/voluntario_postulacion/mandar_mensaje/(:num)', 'Volunta
 $routes->post('Voluntario/voluntario_postulacion/mandar_mensaje/(:num)', 'Voluntario\VoluntarioController::mandar_mensaje/$1');
 $routes->get('Voluntario/voluntario_mensajes', 'Voluntario\VoluntarioController::voluntario_mensajes');
 $routes->post('Voluntario/responder_mensajes/(:num)', 'Voluntario\VoluntarioController::recResMensajes/$1');
+
+$routes->post('Voluntario/coordinacion/mandar_mensaje/(:num)', 'Voluntario\VoluntarioController::mandar_coor_mensaje/$1');
+
+$routes->post('Voluntario/voluntario_postulacion/postular_responsable/(:num)', 'Voluntario\VoluntarioController::postularResponsable/$1');
+$routes->get('Voluntario/voluntario_coordinacion', 'Voluntario\VoluntarioController::voluntario_coordinacion');
+
+$routes->get('Voluntario/donacion/Rechazar/(:num)', 'Voluntario\VoluntarioController::rechazar_postulacion/$1');
+$routes->get('Voluntario/donacion/Aceptar/(:num)', 'Voluntario\VoluntarioController::aceptar_postulacion/$1');
+
+$routes->post('Voluntario/confirmar_entrega/(:num)', 'Voluntario\VoluntarioController::confirmar_entrega/$1');
+$routes->get('Voluntario/confirmar_recojo/(:num)', 'Voluntario\VoluntarioController::confirmar_recojo/$1');
+
+$routes->get('Voluntario/voluntario_participacion', 'Voluntario\VoluntarioController::mostrar_participaciones');
+
 //----------------------------------------------------------
 //----------------------DONANTE--------------------------
 //----------------------------------------------------------

@@ -1,9 +1,16 @@
-<section id="preguntas-frecuentes" class="py-5">
-    <br>
+<br>
+<br>
+<br>
+<br>
+<div class="text-center pb-2">
+    <p class="section-title px-5"><span class="px-2">Preguntas</span></p>
+    <h1 class="mb-4">Preguntas Frecuentes</h1>
+</div>  
+<section id="preguntas-frecuentes" class="py-4">    
     <div class="container">
-        <h2 class="text-center mb-4  display-4">Preguntas Frecuentes</h2>
+        
 
-        <div class="accordion" id="faqAccordion">
+        <div class="" id="">
             <!-- Pregunta 1 -->
             <div class="accordion-item">
                 <h3 class="accordion-header" id="headingOne">

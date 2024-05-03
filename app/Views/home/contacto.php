@@ -1,13 +1,14 @@
-<section id="contacto" class="py-5">
-    <br>
+<br>
+<div class="text-center pb-2" id="contacto">
+    <p class="section-title px-5"><span class="px-2">Contactanos</span></p>
+    <h1 class="mb-4">Medios de Contacto</h1>
+</div>    
+<br>
     <div class="container">
-        <h2 class="text-center display-4 mb-4 ">Contacto</h2>
+        
 
         <!-- Buscador -->
-        <div class="mb-4">
-            <input type="text" class="form-control" placeholder="Buscar organización...">
-        </div>
-
+        
         <!-- Lista de Organizaciones -->
         <div class="table-responsive">
             <table class="table table-striped">
@@ -48,11 +49,3 @@
     </div>
 </section>
 
-<section id="puntos-donacion" class="py-5">
-    <div class="container">
-        <h2 class="text-center mb-4">Puntos de Donación</h2>
-
-        <!-- Mapa de Google Maps -->
-        <div id="mapa" style="height: 400px;"></div>
-    </div>
-</section>
