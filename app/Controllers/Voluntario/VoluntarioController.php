@@ -45,13 +45,15 @@ class VoluntarioController extends BaseController
         $userVol = $voluntario->where('IDusuario', $sesionID)->first();
         $IDvol = $userVol['IDVoluntario'];
 
-        $postulacionesModel = new PostulacionModel();
-        $data['postulaciones'] = $postulacionesModel->getPostulacionPorIdVol($IDvol);
-
         $solicitudModel = new SolicitudModel();
         $data['solicitudes_aceptada'] = $solicitudModel
             ->where('EstadoSolicitud', 'Aceptada')
             ->findAll();
+        $productos = new ProductoModel();
+        $data['productos'] = $productos->findAll();
+
+        $alimentos = new AlimentoModel();
+        $data['alimentos'] = $alimentos->findAll();
         $postulacionesModel = new PostulacionModel();
         $data['postulaciones'] = $postulacionesModel->getPostulacionPorIdVol($IDvol);
 
@@ -113,6 +115,7 @@ class VoluntarioController extends BaseController
 
         $postulacionesModel = new PostulacionModel();
         $data['postulaciones'] = $postulacionesModel->where('EstadoPostulacion', 'Aceptada')->where('IDvoluntario', $IDvol)->findAll();
+
         $postulacionesModel = new PostulacionModel();
         $data['postulacioness'] = $postulacionesModel->findAll();
 
@@ -144,12 +147,43 @@ class VoluntarioController extends BaseController
         $postulacion = $postulacionModel->find($idPostulacion);
 
         if (!$postulacion) {
-            return redirect()->to('Voluntario/voluntario_postulaciones');
+            return redirect()->to('Voluntario/voluntario_coordinacion');
         }
 
         $receptorModel = new VoluntarioModel();
         $recep = $receptorModel->find($postulacion['IDVoluntario']);
 
+        $idDestinatario = $recep['IDUsuario'];
+
+        $asunto = $this->request->getPost('asunto');
+        $contenido = $this->request->getPost('mensaje');
+        $mensajeModel = new MensajeModel();
+        $mensaje = [
+            'Remitente' => $idRemitente,
+            'Destinatario' => $idDestinatario,
+            'Asunto' => $asunto,
+            'Contenido' => $contenido,
+            'FechaHoraEnvio' => date('Y-m-d H:i:s')
+        ];
+        $mensajeModel->insert($mensaje);
+        return redirect()->to('Voluntario/voluntario_mensajes');
+    }
+    public function mandar_coor_mensaje_resp($idPostulacion)
+    {
+        $idRemitente = session()->get('loggedUser.userId');
+        
+        $postulacionModel = new PostulacionModel();
+        $postulacion = $postulacionModel->find($idPostulacion);
+
+        $donaciones = new DonacionModel();
+        $donacion = $donaciones->where('IDSolicitud', $postulacion['IDSolicitud'])->first();
+
+        $participaciones = new ParticipacionModel();
+        $participacion = $participaciones->where('IDDonacion',$donacion['IDDonacion'])->first();
+
+        $receptorModel = new VoluntarioModel();
+        $recep = $receptorModel->find($participacion['IDVoluntario']);
+        
         $idDestinatario = $recep['IDUsuario'];
 
         $asunto = $this->request->getPost('asunto');
@@ -293,16 +327,16 @@ class VoluntarioController extends BaseController
 
     public function aceptar_postulacion($id)
     {
-        $postulacionModel = new ParticipacionModel();
+        $postulacionModel = new PostulacionModel();
         $postulacionModel->find($id);
-        $postulacionModel->update($id, ['EstadoParticipacion' => 'Aceptada']);
+        $postulacionModel->update($id, ['EstadoPostulacion' => 'Aceptada']);
         return redirect()->to('Voluntario/voluntario_coordinacion');
     }
     public function rechazar_postulacion($id)
     {
-        $postulacionModel = new ParticipacionModel();
+        $postulacionModel = new PostulacionModel();
         $postulacionModel->find($id);
-        $postulacionModel->update($id, ['EstadoParticipacion' => 'Rechazada']);
+        $postulacionModel->update($id, ['EstadoPostulacion' => 'Rechazada']);
         return redirect()->to('Voluntario/voluntario_coordinacion');
     }
 
@@ -310,10 +344,10 @@ class VoluntarioController extends BaseController
     {
         // Crear una instancia del modelo de ParticipacionVoluntario
         $participacionModel = new ParticipacionModel();
-    
+
         // Obtener la información de la participación basada en el $idParticipacion
         $participacion = $participacionModel->find($idParticipacion);
-    
+
         // Verificar si se encontró la participación
         if (!$participacion) {
             // Manejar el caso de participación no encontrada
@@ -322,30 +356,25 @@ class VoluntarioController extends BaseController
             // Por ejemplo:
             return "La participación con ID $idParticipacion no fue encontrada.";
         }
-    
-        // Obtener el ID de la donación desde la participación
+
+   
         $idDonacion = $participacion['IDDonacion'];
-    
-        // Crear una instancia del modelo de Donacion
+
         $donacionModel = new DonacionModel();
-    
-        // Obtener la información de la donación basada en el ID de donación
+
         $donacion = $donacionModel->find($idDonacion);
-    
-        // Verificar si se encontró la donación
+        $donacionModel -> update($idDonacion, ['EstadoDonacion' => 'Entregado']);
+ 
         if (!$donacion) {
-            // Manejar el caso de donación no encontrada
-            // Aquí retornarías algo adecuado para tu aplicación
-            // Por ejemplo:
             return "La donación asociada con la participación no fue encontrada.";
         }
-    
+
         // Obtener el ID de la solicitud desde la donación
         $idSolicitud = $donacion['IDSolicitud'];
-    
+
         // Crear una instancia del modelo de EntregaDeDonacion
         $entregaModel = new EntregaDonacionModel();
-    
+
         // Guardar los datos de la entrega en la base de datos
         $datosEntrega = [
             'IDDonacion' => $idDonacion,
@@ -354,26 +383,24 @@ class VoluntarioController extends BaseController
             'ConformidadEntrega' => $this->request->getPost('conformidadEntrega'),
             'Observaciones' => $this->request->getPost('observaciones')
         ];
-    
+
         // Insertar los datos de la entrega en la base de datos
         $entregaModel->insert($datosEntrega);
-    
+
         // Actualizar el estado de la donación a "Entregada" en la tabla SolicitudDeDonacion
         $solicitudModel = new SolicitudModel();
         $solicitudModel->update($idSolicitud, ['ConfirmacionRecepcion' => true]);
-    
+
         // Redirigir a la página de coordinación de voluntarios
         return redirect()->to('Voluntario/voluntario_coordinacion');
     }
-    
+
     public function confirmar_recojo($idParticipacion)
     {
         // Instanciar el modelo de ParticipacionVoluntario
         $participacionModel = new ParticipacionModel();
-
         // Realizar la actualización de la conformidad del recojo
         $participacionModel->update($idParticipacion, ['ConformidadRecojo' => 'Satisfactoria']);
-
         // Redirigir a la página de coordinación de voluntarios
         return redirect()->to('Voluntario/voluntario_coordinacion');
     }
@@ -384,13 +411,11 @@ class VoluntarioController extends BaseController
         $userVol = $voluntario->where('IDusuario', $sesionID)->first();
         $IDvol = $userVol['IDVoluntario'];
         $participacionModel = new ParticipacionModel();
-        $data['participaciones'] = $participacionModel->where('IDVoluntario',$IDvol )->findAll(); // Obtener todas las participaciones
+        $data['participaciones'] = $participacionModel->where('IDVoluntario', $IDvol)->findAll(); // Obtener todas las participaciones
 
         // Cargar la vista y pasar los datos
         return view('Voluntario/voluntario_participacion', $data);
     }
-
-    
 }
         // echo '<pre>';
         // var_dump($sesionID);

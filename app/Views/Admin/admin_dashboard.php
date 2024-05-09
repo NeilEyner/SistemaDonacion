@@ -1,19 +1,13 @@
-<?php
-//la sesión
-$session = session()
+<?php $session = session() ?>
+<?= $this->include('dashboard/d_header.php'); ?>
 
-?>
-<?= $this->include('Layouts/header.php'); ?>
 
-<body class="">
-    <!-- Barra de navegación -->
-    <?= $this->include('Layouts/nav.php'); ?>
 
-    <main class="pt-4">
+
+<main class="pt-4">
     <div class="container">
         <h1 class="display-4">Panel de Administrador</h1>
-        <!-- Agrega tus elementos HTML aquí, como tarjetas informativas, gráficos, tablas de datos, etc. -->
-
+   
         <div class="card mb-3">
             <div class="card-body">
                 <h5 class="card-title"><i class="bi bi-people"></i> Usuarios Registrados</h5>
@@ -30,7 +24,6 @@ $session = session()
             </div>
         </div>
 
-        <!-- Agrega más tarjetas o elementos según sea necesario -->
         <div class="container">
             <h2 class="mt-5">Panel de Administración</h2>
 
@@ -91,8 +84,5 @@ $session = session()
 </main>
 
 
-    <!-- Pie de página -->
-    <?= $this->include('Layouts/footer.php'); ?>
-</body>
-
-</html>
+<!-- Pie de página -->
+<?= $this->include('dashboard/d_footer.php'); ?>

@@ -1,13 +1,6 @@
-<?php
-//la sesión
-$session = session()
+<?php $session = session() ?>
+<?= $this->include('dashboard/d_header.php'); ?>
 
-?>
-<?= $this->include('Layouts/header.php'); ?>
-
-<body class="">
-    <!-- Barra de navegación -->
-    <?= $this->include('Layouts/nav.php'); ?>
     <main>
         <div class="container">
             <div class="row justify-content-center">
@@ -57,8 +50,5 @@ $session = session()
 
     </main>
 
-    <!-- Pie de página -->
-    <?= $this->include('Layouts/footer.php'); ?>
-</body>
-
-</html>
+<!-- Pie de página -->
+<?= $this->include('dashboard/d_footer.php'); ?>

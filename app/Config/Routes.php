@@ -7,7 +7,7 @@ use CodeIgniter\Router\RouteCollection;
  */
 
 $routes->get('/', 'HomeController::index', ['as' => 'home']);
-$routes->get('data/dashboard-default', 'HomeController::index2');
+$routes->get('/dashboard/index', 'HomeController::index2');
 $routes->get('contacto', 'HomeController::contacto');
 
 //login - register
@@ -64,6 +64,8 @@ $routes->get('Voluntario/voluntario_mensajes', 'Voluntario\VoluntarioController:
 $routes->post('Voluntario/responder_mensajes/(:num)', 'Voluntario\VoluntarioController::recResMensajes/$1');
 
 $routes->post('Voluntario/coordinacion/mandar_mensaje/(:num)', 'Voluntario\VoluntarioController::mandar_coor_mensaje/$1');
+$routes->post('Voluntario/coordinacion/mandar_mensaje/responsable(:num)', 'Voluntario\VoluntarioController::mandar_coor_mensaje_resp/$1');
+
 
 $routes->post('Voluntario/voluntario_postulacion/postular_responsable/(:num)', 'Voluntario\VoluntarioController::postularResponsable/$1');
 $routes->get('Voluntario/voluntario_coordinacion', 'Voluntario\VoluntarioController::voluntario_coordinacion');

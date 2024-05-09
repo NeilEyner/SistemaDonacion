@@ -8,6 +8,8 @@ use App\Models\Receptor\SolicitudModel;
 use App\Models\Receptor\ReceptorModel;
 use App\Controllers\BaseController;
 use App\Models\Donante\DonanteModel;
+use App\Models\Donante\AlimentoModel;
+use App\Models\Donante\ProductoModel;
 
 class ReceptorController extends BaseController
 {
@@ -45,7 +47,12 @@ class ReceptorController extends BaseController
         $reco = new ReceptorModel();
         $userRec = $reco->where('IDusuario', $sesionID)->first();
         $IDreceptor = $userRec['IDReceptor'];
-    
+        
+        $productos = new ProductoModel();
+        $data['productos'] = $productos->findAll();
+
+        $alimentos = new AlimentoModel();
+        $data['alimentos'] = $alimentos->findAll();
         // Realizar una consulta SQL para obtener las donaciones asociadas a las solicitudes del receptor
         $db = db_connect();
         $query = $db->query("SELECT d.* 
@@ -165,7 +172,7 @@ class ReceptorController extends BaseController
         return redirect()->to('Receptor/receptor_mensajes');
     }
 
-    public function donPerfil()
+    public function recPerfil()
     {
 
 

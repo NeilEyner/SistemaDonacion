@@ -1,42 +1,50 @@
-<?php $session = session()?>
-<?= $this->include('Layouts/header.php'); ?>
+<?php $session = session() ?>
+<?= $this->include('dashboard/d_header.php'); ?>
 
-<body class="">
-    <!-- Barra de navegación -->
-    <?= $this->include('Layouts/nav.php'); ?>
 
-    <!-- Contenido principal -->
-    <main>
-        <div class="container">
-            <h1 class="mt-5 mb-4">Solicitudes de Donación</h1>
+
+<!-- Solicitudes de Donación -->
+<div class="container-fluid">
+
+    <!-- Solicitudes Pendientes -->
+    <h1 class="h3 mb-4 text-gray-800">Solicitudes de Donación</h1>
+    <div class="card shadow mb-4">
+        <div class="card-header py-3">
+            <h6 class="m-0 font-weight-bold text-primary">Solicitudes Pendientes</h6>
+        </div>
+        <div class="card-body">
             <div class="table-responsive">
-                <table class="table table-hover">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                    <!-- Table Headings -->
                     <thead>
-                        <tr class="table-dark">
-                            <th>ID</th>
+                        <tr>
+                            <!-- <th>ID</th> -->
                             <th>ID Receptor</th>
-                            <th>Fecha</th>
-                            <th>Estado</th>
+                            <th>Fecha Solicitud</th>
+                           
                             <th>Descripción de la Necesidad</th>
                             <th>Prioridad</th>
-                            <th>Fecha Límite de Entrega</th>
-                            <th>Instrucciones de Entrega</th>
-                            <th>Confirmación de Recepción</th>
+                            <th>Límite de Entrega</th>
+                            <!-- <th>Instrucciones de Entrega</th> -->
+                            <!-- <th>Confirmación de Recepción</th> -->
+                            <th>Estado</th>
                             <th>Acciones</th>
                         </tr>
                     </thead>
+                    <!-- Table Body -->
                     <tbody>
                         <?php foreach ($solicitudes as $solicitud) : ?>
                             <tr>
-                                <td><?= $solicitud['IDSolicitud'] ?></td>
+                                <!-- <td><?= $solicitud['IDSolicitud'] ?></td> -->
                                 <td><?= $solicitud['IDReceptor'] ?></td>
                                 <td><?= $solicitud['FechaSolicitud'] ?></td>
-                                <td><?= $solicitud['EstadoSolicitud'] ?></td>
+                               
                                 <td><?= $solicitud['DescripcionNecesidad'] ?></td>
                                 <td><?= $solicitud['Prioridad'] ?></td>
                                 <td><?= $solicitud['FechaLimiteEntrega'] ?></td>
-                                <td><?= $solicitud['InstruccionesEntrega'] ?></td>
-                                <td><?= $solicitud['ConfirmacionRecepcion'] ? 'Sí' : 'No' ?></td>
+                                <!-- <td><?= $solicitud['InstruccionesEntrega'] ?></td> -->
+                                <!-- <td><?= $solicitud['ConfirmacionRecepcion'] ? 'Sí' : 'No' ?></td> -->
+                                <td><?= $solicitud['EstadoSolicitud'] ?></td>
                                 <td>
                                     <div class="btn-group" role="group">
                                         <a href="<?= base_url('Admin/admin_solicitudes/solicitudes_detalles/' . $solicitud['IDSolicitud']) ?>" class="btn btn-sm btn-primary"><i class="fas fa-info-circle"></i> Detalles</a>
@@ -52,38 +60,47 @@
                 </table>
             </div>
         </div>
+    </div>
 
-
-        <div class="container">
-            <h1 class="mt-5 mb-4">Solicitudes de Donación ACEPTADA</h1>
+    <!-- Solicitudes Aceptadas -->
+    <h1 class="h3 mb-4 text-gray-800">Solicitudes de Donación Aceptadas</h1>
+    <div class="card shadow mb-4">
+        <div class="card-header py-3">
+            <h6 class="m-0 font-weight-bold text-primary">Solicitudes Aceptadas</h6>
+        </div>
+        <div class="card-body">
             <div class="table-responsive">
-                <table class="table table-hover">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                    <!-- Table Headings -->
                     <thead>
-                        <tr class="table-dark">
-                            <th>ID</th>
+                        <tr>
+                            <!-- <th>ID</th> -->
                             <th>ID Receptor</th>
-                            <th>Fecha</th>
-                            <th>Estado</th>
+                            <th>Fecha Solicitud</th>
+                           
                             <th>Descripción de la Necesidad</th>
                             <th>Prioridad</th>
-                            <th>Fecha Límite de Entrega</th>
-                            <th>Instrucciones de Entrega</th>
-                            <th>Confirmación de Recepción</th>
+                            <th>Límite de Entrega</th>
+                            <!-- <th>Instrucciones de Entrega</th> -->
+                            <!-- <th>Confirmación de Recepción</th> -->
+                            <th>Estado</th>
                             <th>Acciones</th>
                         </tr>
                     </thead>
+                    <!-- Table Body -->
                     <tbody>
                         <?php foreach ($solicitudesAceptada as $solicitud) : ?>
                             <tr>
-                                <td><?= $solicitud['IDSolicitud'] ?></td>
+                                <!-- <td><?= $solicitud['IDSolicitud'] ?></td> -->
                                 <td><?= $solicitud['IDReceptor'] ?></td>
                                 <td><?= $solicitud['FechaSolicitud'] ?></td>
-                                <td><?= $solicitud['EstadoSolicitud'] ?></td>
+                               
                                 <td><?= $solicitud['DescripcionNecesidad'] ?></td>
                                 <td><?= $solicitud['Prioridad'] ?></td>
                                 <td><?= $solicitud['FechaLimiteEntrega'] ?></td>
-                                <td><?= $solicitud['InstruccionesEntrega'] ?></td>
-                                <td><?= $solicitud['ConfirmacionRecepcion'] ? 'Sí' : 'No' ?></td>
+                                <!-- <td><?= $solicitud['InstruccionesEntrega'] ?></td> -->
+                                <!-- <td><?= $solicitud['ConfirmacionRecepcion'] ? 'Sí' : 'No' ?></td> -->
+                                <td><?= $solicitud['EstadoSolicitud'] ?></td>
                                 <td>
                                     <div class="btn-group" role="group">
                                         <a href="<?= base_url('Admin/admin_solicitudes/solicitudes_detalles/' . $solicitud['IDSolicitud']) ?>" class="btn btn-sm btn-primary"><i class="fas fa-info-circle"></i> Detalles</a>
@@ -99,37 +116,47 @@
                 </table>
             </div>
         </div>
+    </div>
 
-        <div class="container">
-            <h1 class="mt-5 mb-4">Solicitudes de Donación RECHAZADA</h1>
+    <!-- Solicitudes Rechazadas -->
+    <h1 class="h3 mb-4 text-gray-800">Solicitudes de Donación Rechazadas</h1>
+    <div class="card shadow mb-4">
+        <div class="card-header py-3">
+            <h6 class="m-0 font-weight-bold text-primary">Solicitudes Rechazadas</h6>
+        </div>
+        <div class="card-body">
             <div class="table-responsive">
-                <table class="table table-hover">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                    <!-- Table Headings -->
                     <thead>
-                        <tr class="table-dark">
-                            <th>ID</th>
+                        <tr>
+                            <!-- <th>ID</th> -->
                             <th>ID Receptor</th>
-                            <th>Fecha</th>
-                            <th>Estado</th>
+                            <th>Fecha Solicitud</th>
+                           
                             <th>Descripción de la Necesidad</th>
                             <th>Prioridad</th>
-                            <th>Fecha Límite de Entrega</th>
-                            <th>Instrucciones de Entrega</th>
-                            <th>Confirmación de Recepción</th>
+                            <th>Límite de Entrega</th>
+                            <!-- <th>Instrucciones de Entrega</th> -->
+                            <!-- <th>Confirmación de Recepción</th> -->
+                            <th>Estado</th>
                             <th>Acciones</th>
                         </tr>
                     </thead>
+                    <!-- Table Body -->
                     <tbody>
                         <?php foreach ($solicitudesRechazada as $solicitud) : ?>
                             <tr>
-                                <td><?= $solicitud['IDSolicitud'] ?></td>
+                                <!-- <td><?= $solicitud['IDSolicitud'] ?></td> -->
                                 <td><?= $solicitud['IDReceptor'] ?></td>
                                 <td><?= $solicitud['FechaSolicitud'] ?></td>
-                                <td><?= $solicitud['EstadoSolicitud'] ?></td>
+                               
                                 <td><?= $solicitud['DescripcionNecesidad'] ?></td>
                                 <td><?= $solicitud['Prioridad'] ?></td>
                                 <td><?= $solicitud['FechaLimiteEntrega'] ?></td>
-                                <td><?= $solicitud['InstruccionesEntrega'] ?></td>
-                                <td><?= $solicitud['ConfirmacionRecepcion'] ? 'Sí' : 'No' ?></td>
+                                <!-- <td><?= $solicitud['InstruccionesEntrega'] ?></td> -->
+                                <!-- <td><?= $solicitud['ConfirmacionRecepcion'] ? 'Sí' : 'No' ?></td> -->
+                                <td><?= $solicitud['EstadoSolicitud'] ?></td>
                                 <td>
                                     <div class="btn-group" role="group">
                                         <a href="<?= base_url('Admin/admin_solicitudes/solicitudes_detalles/' . $solicitud['IDSolicitud']) ?>" class="btn btn-sm btn-primary"><i class="fas fa-info-circle"></i> Detalles</a>
@@ -145,15 +172,11 @@
                 </table>
             </div>
         </div>
+    </div>
+
+</div>
+<!-- /.container-fluid -->
 
 
-
-
-
-    </main>
-
-    <!-- Pie de página -->
-    <?= $this->include('Layouts/footer.php'); ?>
-</body>
-
-</html>
+<!-- Pie de página -->
+<?= $this->include('dashboard/d_footer.php'); ?>

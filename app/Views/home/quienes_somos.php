@@ -1,197 +1,259 @@
-<!-- Facilities Start -->
-<div class="container-fluid pt-5">
-    <div class="container pb-3">
+<!-- Quienes sommos -->
+<div class="rn-service-area rn-section-gap section-separator" id="features">
+    <div class="container">
         <div class="row">
-            <div class="col-lg-4 col-md-6 pb-1">
-                <div class="d-flex bg-light shadow-sm border-top rounded mb-4" style="padding: 30px;">
-                    <i class="flaticon-050-fence h1 font-weight-normal text-primary mb-3"></i>
-                    <div class="pl-4">
-                        <h4>Facilidad de uso</h4>
-                        <p class="m-0">Fácil de navegar para que los usuarios puedan hacer donaciones sin problemas...</p>
-                    </div>
+            <div class="col-lg-12">
+                <div class="section-title text-left" data-aos="fade-up" data-aos-duration="500" data-aos-delay="100" data-aos-once="true">
+                    <span class="subtitle">Conocenos</span>
+                    <h2 class="title">Quienes Somos</h2>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6 pb-1">
-                <div class="d-flex bg-light shadow-sm border-top rounded mb-4" style="padding: 30px;">
-                    <i class="flaticon-030-crayons h1 font-weight-normal text-primary mb-3"></i>
-                    <div class="pl-4">
-                        <h4>Seguridad</h4>
-                        <p class="m-0">Seguridad de los datos personales de los donantes para generar confianza...</p>
+        </div>
+        <div class="row row--25 mt_md--10 mt_sm--10">
+
+            <!-- Start Single Service -->
+            <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="100" data-aos-once="true" class="col-lg-6 col-xl-4 col-md-6 col-sm-12 col-12 mt--50 mt_md--30 mt_sm--30">
+                <div class="rn-service">
+                    <div class="inner">
+                        <div class="icon">
+                            <i data-feather="menu"></i>
+                        </div>
+                        <div class="content">
+                            <h4 class="title"><a href="#">Mision</a></h4>
+                            <p class="description">Facilitar y promover la solidaridad y el apoyo entre individuos y comunidades, conectando a 
+                                donantes con causas significativas y organizaciones benéficas confiables. Nuestra misión es contribuir al bienestar social y el desarrollo sostenible mediante la generosidad y la acción colectiva.</p>
+                            <a class="read-more-button" href="#"><i class="feather-arrow-right"></i></a>
+                        </div>
                     </div>
+                    <a class="over-link" href="#"></a>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6 pb-1">
-                <div class="d-flex bg-light shadow-sm border-top rounded mb-4" style="padding: 30px;">
-                    <i class="flaticon-030-crayons h1 font-weight-normal text-primary mb-3"></i>
-                    <div class="pl-4">
-                        <h4>Registro de voluntarios</h4>
-                        <p class="m-0">Medio para que las personas se registren como voluntarios, se inscriban en proyectos...</p>
+            <!-- End SIngle Service -->
+            <!-- Start Single Service -->
+            <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="300" data-aos-once="true" class="col-lg-6 col-xl-4 col-md-6 col-sm-12 col-12 mt--50 mt_md--30 mt_sm--30">
+                <div class="rn-service">
+                    <div class="inner">
+                        <div class="icon">
+                            <i data-feather="book-open"></i>
+                        </div>
+                        <div class="content">
+                            <h4 class="title"><a href="#">Vision</a></h4>
+                            <p class="description"> Ser el principal facilitador de donaciones, brindando una plataforma innovadora y segura que inspire confianza y fomente un impacto positivo significativo en la sociedad. Aspiramos a construir un mundo donde la ayuda y la solidaridad sean accesibles para todos, y donde 
+                                cada contribución marque una diferencia 
+                                tangible en la vida de quienes más lo necesitan.</p>
+                            <a class="read-more-button" href="#"><i class="feather-arrow-right"></i></a>
+                        </div>
                     </div>
+                    <a class="over-link" href="#"></a>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6 pb-1">
-                <div class="d-flex bg-light shadow-sm border-top rounded mb-4" style="padding: 30px;">
-                    <i class="flaticon-017-toy-car h1 font-weight-normal text-primary mb-3"></i>
-                    <div class="pl-4">
-                        <h4>Personalización</h4>
-                        <p class="m-0">Para que las organizaciones puedan adaptar el proceso de donación a sus necesidades...</p>
+            <!-- End SIngle Service -->
+            <!-- Start Single Service -->
+            <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="500" data-aos-once="true" class="col-lg-6 col-xl-4 col-md-6 col-sm-12 col-12 mt--50 mt_md--30 mt_sm--30">
+                <div class="rn-service">
+                    <div class="inner">
+                        <div class="icon">
+                            <i data-feather="tv"></i>
+                        </div>
+                        <div class="content">
+                            <h4 class="title"><a href="#">Historia </a></h4>
+                            <p class="description">La historia de nuestro sistema de donación se remonta a la creación de una plataforma digital con un propósito claro: conectar a personas que desean ayudar con causas que necesitan apoyo. Surgió de la visión de un grupo de 
+                                individuos comprometidos con hacer del mundo un lugar mejor y más solidario.</p>
+                            <a class="read-more-button" href="#"><i class="feather-arrow-right"></i></a>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 pb-1">
-                <div class="d-flex bg-light shadow-sm border-top rounded mb-4" style="padding: 30px;">
-                    <i class="flaticon-025-sandwich h1 font-weight-normal text-primary mb-3"></i>
-                    <div class="pl-4">
-                        <h4>Informes y seguimiento</h4>
-                        <p class="m-0">Herramienta para las entidades y puedan realizar seguimiento de las donaciones...</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 pb-1">
-                <div class="d-flex bg-light shadow-sm border-top rounded mb-4" style="padding: 30px;">
-                    <i class="flaticon-047-backpack h1 font-weight-normal text-primary mb-3"></i>
-                    <div class="pl-4">
-                        <h4>Compatibilidad</h4>
-                        <p class="m-0">La compatibilidad con los diferentes navegadores existentes...</p>
-                    </div>
+                    <a class="over-link" href="#"></a>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<!-- Facilities Start -->
 
-<!-- About Start -->
-<div class="container-fluid py-5">
+<!-- objetivos -->
+
+<div class="rn-service-area rn-section-gap section-separator" id="features">
     <div class="container">
-        <div class="row align-items-center">
-            <div class="col-lg-5">
-                <img class="img-fluid rounded mb-5 mb-lg-0" src="<?= base_url('assets/images/don-1.jpg') ?>" alt="">
-            </div>
-            <div class="col-lg-7">
-                <p class="section-title pr-5"><span class="pr-2">Ayuda a familias</span></p>
-                <h1 class="mb-4">El mejor sistema de donación</h1>
-                <p>donaciones seguras y transparentes para ayudar a quienes lo necesitan. Garantizamos el uso efectivo de cada donación y proporcionamos actualizaciones regulares sobre su impacto. Nuestro objetivo: canalizar la generosidad hacia causas significativas.</p>
-                <div class="row pt-2 pb-4">
-                    <div class="col-6 col-md-4">
-                        <img class="img-fluid rounded" src="<?= base_url('assets/images/don-2.jpg') ?>" alt="">
-                    </div>
-                    <div class="col-6 col-md-8">
-                        <ul class="list-inline m-0">
-                            <li class="py-2 border-top border-bottom"><i class="fa fa-check text-primary mr-3"></i>Nos comprometemos a brindar información.</li>
-                            <li class="py-2 border-bottom"><i class="fa fa-check text-primary mr-3"></i> Trabajamos de manera eficiente para garantizar que tu donación.</li>
-                            <li class="py-2 border-bottom"><i class="fa fa-check text-primary mr-3"></i>Estamos dedicados a canalizar la generosidad hacia causas significativas.</li>
-                        </ul>
-                    </div>
-                </div>
-                <a href="" class="btn btn-primary mt-2 py-2 px-4">Learn More</a>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- About End -->
-
-
-<div class="container-fluid pt-5" id="quienes-somos">
-    <div class="container">
-        <div class="text-center pb-2">
-            <p class="section-title px-5"><span class="px-2">Quienes Somos</span></p>
-        </div>
-        <div class="container-fluid pt-5">
-            <div class="container pb-3">
-                <div class="row">
-                    <div class="col-lg-4 col-md-6 pb-1">
-                        <div class="d-flex bg-light shadow-sm border-top rounded mb-4" style="padding: 30px;">
-                            <i class="flaticon-050-fence h1 font-weight-normal text-primary mb-3"></i>
-                            <div class="pl-4">
-                                <h4>Mision</h4>
-                                <p class="m-0">Fácil de navegar para que los usuarios puedan hacer donaciones sin problemas...</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 pb-1">
-                        <div class="d-flex bg-light shadow-sm border-top rounded mb-4" style="padding: 30px;">
-                            <i class="flaticon-030-crayons h1 font-weight-normal text-primary mb-3"></i>
-                            <div class="pl-4">
-                                <h4>VIsion</h4>
-                                <p class="m-0">Seguridad de los datos personales de los donantes para generar confianza...</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 pb-1">
-                        <div class="d-flex bg-light shadow-sm border-top rounded mb-4" style="padding: 30px;">
-                            <i class="flaticon-030-crayons h1 font-weight-normal text-primary mb-3"></i>
-                            <div class="pl-4">
-                                <h4>Historia</h4>
-                                <p class="m-0">Medio para que las personas se registren como voluntarios, se inscriban en proyectos...</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
-        </div>
-
-    </div>
-</div>
-</div>
-<!-- Team Start -->
-<div class="container-fluid pt-5" id="equipo">
-    <div class="container">
-        <div class="text-center pb-2">
-            <p class="section-title px-5"><span class="px-2">Equipo </span></p>
-            <h1 class="mb-4">Desarrolladores</h1>
-        </div>
         <div class="row">
-            <div class="col-md-6 col-lg-3 text-center team mb-5">
-                <div class="position-relative overflow-hidden mb-4" style="border-radius: 100%;">
-                    <img class="img-fluid w-100" src="<?= base_url('assets/images/team-4.jpg') ?>" alt="">
-                    <div class="team-social d-flex align-items-center justify-content-center w-100 h-100 position-absolute">
-                        <a class="btn btn-outline-light text-center mr-2 px-0" style="width: 38px; height: 38px;" href="#"><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-outline-light text-center mr-2 px-0" style="width: 38px; height: 38px;" href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-outline-light text-center px-0" style="width: 38px; height: 38px;" href="#"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
+            <div class="col-lg-12">
+                <div class="section-title text-left" data-aos="fade-up" data-aos-duration="500" data-aos-delay="100" data-aos-once="true">
+                    <span class="subtitle">Conocenos mas ...</span>
+                    <h2 class="title">Objetivos</h2>
                 </div>
-                <h4>Nombre Completo</h4>
-                <i>Dev DataBase</i>
             </div>
-            <div class="col-md-6 col-lg-3 text-center team mb-5">
-                <div class="position-relative overflow-hidden mb-4" style="border-radius: 100%;">
-                    <img class="img-fluid w-100" src="<?= base_url('assets/images/team-4.jpg') ?>" alt="">
-                    <div class="team-social d-flex align-items-center justify-content-center w-100 h-100 position-absolute">
-                        <a class="btn btn-outline-light text-center mr-2 px-0" style="width: 38px; height: 38px;" href="#"><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-outline-light text-center mr-2 px-0" style="width: 38px; height: 38px;" href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-outline-light text-center px-0" style="width: 38px; height: 38px;" href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <div class="row row--25 mt_md--10 mt_sm--10">
+
+            <!-- Start Single Service -->
+            <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="300" data-aos-once="true" class="col-lg-6 col-xl-4 col-md-6 col-sm-12 col-12 mt--50 mt_md--30 mt_sm--30">
+                <div class="rn-service">
+                    <div class="inner">
+                        <div class="icon">
+                        <i data-feather="menu"></i>
+                        </div>
+                        <div class="content">
+                            <h4 class="title"><a href="#">1</a></h4>
+                            <p class="description">Donaciones seguras y transparentes.</p>
+                            <a class="read-more-button" href="#"><i class="feather-arrow-right"></i></a>
+                        </div>
                     </div>
+                    <a class="over-link" href="#"></a>
                 </div>
-                <h4>Nombre Completo</h4>
-                <i>Dev IU/UX</i>
             </div>
-            <div class="col-md-6 col-lg-3 text-center team mb-5">
-                <div class="position-relative overflow-hidden mb-4" style="border-radius: 100%;">
-                    <img class="img-fluid w-100" src="<?= base_url('assets/images/team-4.jpg') ?>" alt="">
-                    <div class="team-social d-flex align-items-center justify-content-center w-100 h-100 position-absolute">
-                        <a class="btn btn-outline-light text-center mr-2 px-0" style="width: 38px; height: 38px;" href="#"><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-outline-light text-center mr-2 px-0" style="width: 38px; height: 38px;" href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-outline-light text-center px-0" style="width: 38px; height: 38px;" href="#"><i class="fab fa-linkedin-in"></i></a>
+            <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="300" data-aos-once="true" class="col-lg-6 col-xl-4 col-md-6 col-sm-12 col-12 mt--50 mt_md--30 mt_sm--30">
+                <div class="rn-service">
+                    <div class="inner">
+                        <div class="icon">
+                        <i data-feather="menu"></i>
+                        </div>
+                        <div class="content">
+                            <h4 class="title"><a href="#">2</a></h4>
+                            <p class="description">Diversificar causas y alcance.</p>
+                            <a class="read-more-button" href="#"><i class="feather-arrow-right"></i></a>
+                        </div>
                     </div>
+                    <a class="over-link" href="#"></a>
                 </div>
-                <h4>Nombre Completo</h4>
-                <i>Dev FrontEnd</i>
             </div>
-            <div class="col-md-6 col-lg-3 text-center team mb-5">
-                <div class="position-relative overflow-hidden mb-4" style="border-radius: 100%;">
-                    <img class="img-fluid w-100" src="<?= base_url('assets/images/team-4.jpg') ?>" alt="">
-                    <div class="team-social d-flex align-items-center justify-content-center w-100 h-100 position-absolute">
-                        <a class="btn btn-outline-light text-center mr-2 px-0" style="width: 38px; height: 38px;" href="#"><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-outline-light text-center mr-2 px-0" style="width: 38px; height: 38px;" href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-outline-light text-center px-0" style="width: 38px; height: 38px;" href="#"><i class="fab fa-linkedin-in"></i></a>
+            <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="300" data-aos-once="true" class="col-lg-6 col-xl-4 col-md-6 col-sm-12 col-12 mt--50 mt_md--30 mt_sm--30">
+                <div class="rn-service">
+                    <div class="inner">
+                        <div class="icon">
+                        <i data-feather="menu"></i>
+                        </div>
+                        <div class="content">
+                            <h4 class="title"><a href="#">3</a></h4>
+                            <p class="description">Fomentar conciencia y participación.</p>
+                            <a class="read-more-button" href="#"><i class="feather-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <a class="over-link" href="#"></a>
+                </div>
+            </div>
+            <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="300" data-aos-once="true" class="col-lg-6 col-xl-4 col-md-6 col-sm-12 col-12 mt--50 mt_md--30 mt_sm--30">
+                <div class="rn-service">
+                    <div class="inner">
+                        <div class="icon">
+                        <i data-feather="menu"></i>
+                        </div>
+                        <div class="content">
+                            <h4 class="title"><a href="#">4</a></h4>
+                            <p class="description">Mejorar experiencia del donante.</p>
+                            <a class="read-more-button" href="#"><i class="feather-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <a class="over-link" href="#"></a>
+                </div>
+            </div>
+            <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="300" data-aos-once="true" class="col-lg-6 col-xl-4 col-md-6 col-sm-12 col-12 mt--50 mt_md--30 mt_sm--30">
+                <div class="rn-service">
+                    <div class="inner">
+                        <div class="icon">
+                        <i data-feather="menu"></i>
+                        </div>
+                        <div class="content">
+                            <h4 class="title"><a href="#">5</a></h4>
+                            <p class="description">Alianzas con organizaciones benéficas.</p>
+                            <a class="read-more-button" href="#"><i class="feather-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <a class="over-link" href="#"></a>
+                </div>
+            </div>
+            <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="300" data-aos-once="true" class="col-lg-6 col-xl-4 col-md-6 col-sm-12 col-12 mt--50 mt_md--30 mt_sm--30">
+                <div class="rn-service">
+                    <div class="inner">
+                        <div class="icon">
+                        <i data-feather="menu"></i>
+                        </div>
+                        <div class="content">
+                            <h4 class="title"><a href="#">6</a></h4>
+                            <p class="description">Innovación constante y colaborativa.</p>
+                            <a class="read-more-button" href="#"><i class="feather-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <a class="over-link" href="#"></a>
+                </div>
+            </div>
+
+            <!-- End SIngle Service -->
+
+        </div>
+    </div>
+</div>
+<!-- End Service Area  -->
+<!-- Start Equipo  -->
+<div class="rn-testimonial-area rn-section-gap section-separator" id="testimonial">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="100" data-aos-once="true" class="section-title text-center">
+                    <span class="subtitle">Nosotros</span>
+                    <h2 class="title">Equipo</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row" data-aos="fade-up" data-aos-duration="500" data-aos-delay="300" data-aos-once="true">
+            <div class="col-lg-12">
+                <div class="testimonial-activation testimonial-pb mb--30">
+                    <!-- Start Single testiminail -->
+                    <div class="testimonial mt--50 mt_md--40 mt_sm--40">
+                        <div class="inner">
+                            <div class="card-info">
+                                <div class="card-thumbnail">
+                                    <img src="assets/images/3d/Saly-11.png" alt="Testimonial-image">
+                                </div>
+                                <div class="card-content">
+                                    <span class="subtitle mt--10">Hola</span>
+                                    <h3 class="title">Jhonny </h3>
+                                    <span class="designation">desarrollador movil</span>
+                                </div>
+                            </div>
+                            <div class="card-description">
+                                <div class="title-area">
+                                    <div class="title-info">
+                                        <h3 class="title">Android</h3>
+                                        <!-- <span class="date">via Upwork - Mar 4, 2015 - Aug 30, 2021</span> -->
+                                    </div>
+                                       
+                                </div>
+                                <div class="seperator"></div>
+                                <p class="discription">
+                                     Aprendiendo...
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Single testiminail -->
+                    <div class="testimonial mt--50 mt_md--40 mt_sm--40">
+                        <div class="inner">
+                            <div class="card-info">
+                                <div class="card-thumbnail">
+                                    <img src="assets/images/3d/Saly-13.png" alt="Testimonial-image">
+                                </div>
+                                <div class="card-content">
+                                    <span class="subtitle mt--10">Hola</span>
+                                    <h3 class="title">Neil</h3>
+                                    <span class="designation">desarrollador Web</span>
+                                </div>
+                            </div>
+                            <div class="card-description">
+                                <div class="title-area">
+                                    <div class="title-info">
+                                        <h3 class="title">PHP, codeignater 4, Bootstrap</h3>
+                                        <!-- <span class="date">via Upwork - Mar 4, 2015 - Aug 30, 2021</span> -->
+                                    </div>
+                                       
+                                </div>
+                                <div class="seperator"></div>
+                                <p class="discription">
+                                     Aprendiendo...
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <h4>Nombre Completo</h4>
-                <i>Dev BackEnd</i>
             </div>
         </div>
     </div>
 </div>
-<!-- Team End -->
+<!-- End Equipo  -->

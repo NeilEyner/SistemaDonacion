@@ -1,13 +1,8 @@
-<!-- Voluntario/voluntario_mensajes_recibidos.php -->
 <?php $session = session() ?>
-<?= $this->include('Layouts/header.php'); ?>
+<?= $this->include('dashboard/d_header.php'); ?>
 
-<body class="">
-    <!-- Barra de navegación -->
-    <?= $this->include('Layouts/nav.php'); ?>
 
-    <!-- Contenido principal -->
-    <main>
+   
         <div class="container">
             <h1><i class="bi bi-envelope-fill"></i> Mensajes Recibidos</h1>
 
@@ -93,9 +88,6 @@
                 <p class="alert alert-info"><i class="bi bi-info-circle"></i> No hay mensajes enviados.</p>
             <?php endif; ?>
         </div>
-    </main>
 
-    <?= $this->include('Layouts/footer.php'); ?>
-</body>
-
-</html>
+<!-- Pie de página -->
+<?= $this->include('dashboard/d_footer.php'); ?>

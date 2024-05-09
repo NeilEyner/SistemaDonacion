@@ -1,14 +1,7 @@
-<!-- Voluntario/voluntario_mensajes_recibidos.php -->
 <?php $session = session() ?>
-<?= $this->include('Layouts/header.php'); ?>
+<?= $this->include('dashboard/d_header.php'); ?>
 
-<body class="">
-    <!-- Barra de navegación -->
-    
-    <?= $this->include('Layouts/nav.php'); ?>
 
-    <!-- Contenido principal -->
-    <main>
         <div class="container mt-4">
             <div class="row">
                 <div class="col">
@@ -92,8 +85,6 @@
             doc.save('participaciones_voluntarias.pdf');
         });
     </script>
-    <!-- Pie de página -->
-    <?= $this->include('Layouts/footer.php'); ?>
-</body>
 
-</html>
+<!-- Pie de página -->
+<?= $this->include('dashboard/d_footer.php'); ?>

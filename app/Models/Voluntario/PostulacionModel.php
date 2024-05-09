@@ -16,7 +16,7 @@ class PostulacionModel extends Model
     }
     public function getPostulaciones()
     {
-        // Consulta las postulaciones pendientes de la base de datos
+        // Consulta las postulaciones de la base de datos
         return $this->findAll();
     }
     public function getPostulacionesPendientes()

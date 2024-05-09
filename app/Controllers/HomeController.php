@@ -8,9 +8,7 @@ class HomeController extends BaseController
 {
     public function index()
     {
-        
 
-        
         return view('home/index');
     }
     public function contacto()
@@ -19,6 +17,6 @@ class HomeController extends BaseController
     }
     public function index2()
     {
-        return view('data/dashboard-default');
+        return view('dashboard/index');
     }
 }

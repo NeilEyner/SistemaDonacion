@@ -48,6 +48,7 @@ class AdminController extends BaseController
     public function donaciones()
     {
         $donacionModel = new DonacionModel();
+        $data['donaciones'] = $donacionModel->getDonacion();
         $data['donacionesPendientes'] = $donacionModel->getDonacionPendiente();
         $data['donacionesEntregadas'] = $donacionModel->getDonacionEntregada();
         $data['donacionesCanceladas'] = $donacionModel->getDonacionCancelada();
@@ -69,7 +70,7 @@ class AdminController extends BaseController
         $data['participaciones'] = $parti -> findAll();
 
         $postulacionesModel = new PostulacionModel();
-        $data['postulaciones'] = $postulacionesModel->getPostulacionesPendientes();
+        $data['postulaciones'] = $postulacionesModel->getPostulaciones();
         $data['postulacionesAceptada'] = $postulacionesModel->getPostulacionesAceptada();
         $data['postulacionesRechazada'] = $postulacionesModel->getPostulacionesRechazada();
 
@@ -85,20 +86,44 @@ class AdminController extends BaseController
 
     public function actualizar_usuario()
     {
+        // Instanciar el modelo de usuario
         $usuarioModel = new UsuarioModel();
+    
+        // Obtener el ID de usuario de la solicitud
         $idUsuario = $this->request->getPost('id');
-        $data = [
+    
+        // Obtener datos de la solicitud y asignarlos a un arreglo
+        $nuevosDatos = [
             'Nombre' => $this->request->getPost('nombre'),
             'Usuario' => $this->request->getPost('usuario'),
             'CorreoElectronico' => $this->request->getPost('correo'),
-            'Contrasena' => $this->request->getPost('contrasena'),
             'Rol' => $this->request->getPost('rol'),
-            'Habilitado' => $this->request->getPost('habilitado') ? true : false
+            'Habilitado' => (bool) $this->request->getPost('habilitado') // Convertir a booleano
         ];
-        $usuarioModel->update($idUsuario, $data);
+    
+        // Obtener los datos actuales del usuario
+        $datosActuales = $usuarioModel->find($idUsuario);
+    
+        // Verificar si la contraseña ha cambiado
+        $nuevaContrasena = $this->request->getPost('contrasena');
+        if (!empty($nuevaContrasena) && $nuevaContrasena != $datosActuales['Contrasena']) {
+            // Si la contraseña ha cambiado, actualizarla en los nuevos datos
+            $nuevosDatos['Contrasena'] = $nuevaContrasena;
+        } else {
+            // Si la contraseña no ha cambiado, eliminarla de los nuevos datos para evitar su actualización
+            unset($nuevosDatos['Contrasena']);
+        }
+    
+        // Verificar si los datos son diferentes antes de actualizar
+        if ($nuevosDatos != $datosActuales) {
+            // Actualizar los datos del usuario en la base de datos
+            $usuarioModel->update($idUsuario, $nuevosDatos);
+        }
+    
+        // Redirigir al usuario a la página de administración de usuarios
         return redirect()->to('Admin/admin_usuarios');
     }
-
+    
     public function eliminar_usuario($id)
     {
         $usuarioModel = new UsuarioModel();
