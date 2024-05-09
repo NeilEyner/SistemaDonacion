@@ -19,9 +19,9 @@
                     <thead>
                         <tr>
                             <!-- <th>ID</th> -->
-                            <th>ID Receptor</th>
+                            <th>Receptor</th>
                             <th>Fecha Solicitud</th>
-                           
+
                             <th>Descripción de la Necesidad</th>
                             <th>Prioridad</th>
                             <th>Límite de Entrega</th>
@@ -36,9 +36,13 @@
                         <?php foreach ($solicitudes as $solicitud) : ?>
                             <tr>
                                 <!-- <td><?= $solicitud['IDSolicitud'] ?></td> -->
-                                <td><?= $solicitud['IDReceptor'] ?></td>
+                                <td><?php foreach ($receptores as $receptor) :
+                                        if ($receptor['IDReceptor'] == $solicitud['IDReceptor']) :
+                                            echo $receptor['Nombre'];
+                                        endif;
+                                    endforeach; ?></td>
                                 <td><?= $solicitud['FechaSolicitud'] ?></td>
-                               
+
                                 <td><?= $solicitud['DescripcionNecesidad'] ?></td>
                                 <td><?= $solicitud['Prioridad'] ?></td>
                                 <td><?= $solicitud['FechaLimiteEntrega'] ?></td>
@@ -47,7 +51,7 @@
                                 <td><?= $solicitud['EstadoSolicitud'] ?></td>
                                 <td>
                                     <div class="btn-group" role="group">
-                                        <a href="<?= base_url('Admin/admin_solicitudes/solicitudes_detalles/' . $solicitud['IDSolicitud']) ?>" class="btn btn-sm btn-primary"><i class="fas fa-info-circle"></i> Detalles</a>
+                                        <!-- <a href="<?= base_url('Admin/admin_solicitudes/solicitudes_detalles/' . $solicitud['IDSolicitud']) ?>" class="btn btn-sm btn-primary"><i class="fas fa-info-circle"></i> Detalles</a> -->
                                         <?php if ($solicitud['EstadoSolicitud'] === 'Pendiente') : ?>
                                             <a href="<?= base_url('Admin/admin_solicitudes/solicitudes_aceptar/' . $solicitud['IDSolicitud']) ?>" class="btn btn-sm btn-success"><i class="fas fa-check"></i> Aceptar</a>
                                             <a href="<?= base_url('Admin/admin_solicitudes/solicitudes_rechazar/' . $solicitud['IDSolicitud']) ?>" class="btn btn-sm btn-danger"><i class="fas fa-times"></i> Rechazar</a>
@@ -75,9 +79,9 @@
                     <thead>
                         <tr>
                             <!-- <th>ID</th> -->
-                            <th>ID Receptor</th>
+                            <th>Receptor</th>
                             <th>Fecha Solicitud</th>
-                           
+
                             <th>Descripción de la Necesidad</th>
                             <th>Prioridad</th>
                             <th>Límite de Entrega</th>
@@ -92,9 +96,12 @@
                         <?php foreach ($solicitudesAceptada as $solicitud) : ?>
                             <tr>
                                 <!-- <td><?= $solicitud['IDSolicitud'] ?></td> -->
-                                <td><?= $solicitud['IDReceptor'] ?></td>
+                                <td><?php foreach ($receptores as $receptor) :
+                                        if ($receptor['IDReceptor'] == $solicitud['IDReceptor']) :
+                                            echo $receptor['Nombre'];
+                                        endif;
+                                    endforeach; ?></td>
                                 <td><?= $solicitud['FechaSolicitud'] ?></td>
-                               
                                 <td><?= $solicitud['DescripcionNecesidad'] ?></td>
                                 <td><?= $solicitud['Prioridad'] ?></td>
                                 <td><?= $solicitud['FechaLimiteEntrega'] ?></td>
@@ -103,7 +110,7 @@
                                 <td><?= $solicitud['EstadoSolicitud'] ?></td>
                                 <td>
                                     <div class="btn-group" role="group">
-                                        <a href="<?= base_url('Admin/admin_solicitudes/solicitudes_detalles/' . $solicitud['IDSolicitud']) ?>" class="btn btn-sm btn-primary"><i class="fas fa-info-circle"></i> Detalles</a>
+                                        <!-- <a href="<?= base_url('Admin/admin_solicitudes/solicitudes_detalles/' . $solicitud['IDSolicitud']) ?>" class="btn btn-sm btn-primary"><i class="fas fa-info-circle"></i> Detalles</a> -->
                                         <?php if ($solicitud['EstadoSolicitud'] === 'Aceptada') : ?>
                                             <a href="<?= base_url('Admin/admin_solicitudes/solicitudes_pendiente/' . $solicitud['IDSolicitud']) ?>" class="btn btn-sm btn-secondary"><i class="fas fa-hourglass-half"></i> Pendiente</a>
                                             <a href="<?= base_url('Admin/admin_solicitudes/solicitudes_rechazar/' . $solicitud['IDSolicitud']) ?>" class="btn btn-sm btn-danger"><i class="fas fa-times"></i> Rechazar</a>
@@ -131,9 +138,9 @@
                     <thead>
                         <tr>
                             <!-- <th>ID</th> -->
-                            <th>ID Receptor</th>
+                            <th>Receptor</th>
                             <th>Fecha Solicitud</th>
-                           
+
                             <th>Descripción de la Necesidad</th>
                             <th>Prioridad</th>
                             <th>Límite de Entrega</th>
@@ -148,9 +155,14 @@
                         <?php foreach ($solicitudesRechazada as $solicitud) : ?>
                             <tr>
                                 <!-- <td><?= $solicitud['IDSolicitud'] ?></td> -->
-                                <td><?= $solicitud['IDReceptor'] ?></td>
+                                <td><?php foreach ($receptores as $receptor) :
+                                        if ($receptor['IDReceptor'] == $solicitud['IDReceptor']) :
+                                            echo $receptor['Nombre'];
+                                        endif;
+                                    endforeach; ?></td>
+
                                 <td><?= $solicitud['FechaSolicitud'] ?></td>
-                               
+
                                 <td><?= $solicitud['DescripcionNecesidad'] ?></td>
                                 <td><?= $solicitud['Prioridad'] ?></td>
                                 <td><?= $solicitud['FechaLimiteEntrega'] ?></td>
@@ -159,7 +171,7 @@
                                 <td><?= $solicitud['EstadoSolicitud'] ?></td>
                                 <td>
                                     <div class="btn-group" role="group">
-                                        <a href="<?= base_url('Admin/admin_solicitudes/solicitudes_detalles/' . $solicitud['IDSolicitud']) ?>" class="btn btn-sm btn-primary"><i class="fas fa-info-circle"></i> Detalles</a>
+                                        <!-- <a href="<?= base_url('Admin/admin_solicitudes/solicitudes_detalles/' . $solicitud['IDSolicitud']) ?>" class="btn btn-sm btn-primary"><i class="fas fa-info-circle"></i> Detalles</a> -->
                                         <?php if ($solicitud['EstadoSolicitud'] === 'Rechazada') : ?>
                                             <a href="<?= base_url('Admin/admin_solicitudes/solicitudes_aceptar/' . $solicitud['IDSolicitud']) ?>" class="btn btn-sm btn-success"><i class="fas fa-check"></i> Aceptar</a>
                                             <a href="<?= base_url('Admin/admin_solicitudes/solicitudes_pendiente/' . $solicitud['IDSolicitud']) ?>" class="btn btn-sm btn-secondary"><i class="fas fa-hourglass-half"></i> Pendiente</a>

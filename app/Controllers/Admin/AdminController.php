@@ -6,10 +6,12 @@ use App\Controllers\BaseController;
 
 use App\Models\UsuarioModel;
 use App\Models\Donante\DonacionModel;
+use App\Models\Donante\DonanteModel;
+use App\Models\Receptor\ReceptorModel;
 use App\Models\Receptor\SolicitudModel;
 use App\Models\Voluntario\ParticipacionModel;
 use App\Models\Voluntario\PostulacionModel;
-
+use App\Models\Voluntario\VoluntarioModel;
 class AdminController extends BaseController
 {
     public function dashboard()
@@ -47,6 +49,11 @@ class AdminController extends BaseController
 
     public function donaciones()
     {
+        $solicitud = new SolicitudModel();
+        $data['solicitudes'] = $solicitud->findAll();
+
+        $donante = new DonanteModel();
+        $data['donantes'] = $donante -> findAll();
         $donacionModel = new DonacionModel();
         $data['donaciones'] = $donacionModel->getDonacion();
         $data['donacionesPendientes'] = $donacionModel->getDonacionPendiente();
@@ -57,6 +64,8 @@ class AdminController extends BaseController
 
     public function solicitudes()
     {
+        $receptor  = new ReceptorModel();
+        $data ['receptores'] = $receptor-> findAll();
         $solicitudModel = new SolicitudModel();
         $data['solicitudes'] = $solicitudModel->getSolicitudPendiente();
         $data['solicitudesAceptada'] = $solicitudModel->getSolicitudAceptada();
@@ -68,7 +77,12 @@ class AdminController extends BaseController
     {
         $parti = new ParticipacionModel();
         $data['participaciones'] = $parti -> findAll();
-
+        $voluntario = new VoluntarioModel();
+        $data['voluntarios'] = $voluntario -> findAll();
+        $usurio = new UsuarioModel();
+        $data['usuarios'] = $usurio -> findAll();
+        $solicitudModel = new SolicitudModel();
+        $data['solicitudes'] = $solicitudModel->find();
         $postulacionesModel = new PostulacionModel();
         $data['postulaciones'] = $postulacionesModel->getPostulaciones();
         $data['postulacionesAceptada'] = $postulacionesModel->getPostulacionesAceptada();

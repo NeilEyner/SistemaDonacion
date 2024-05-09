@@ -2,8 +2,7 @@
 <?= $this->include('dashboard/d_header.php'); ?>
 
 
-
-    <!-- Contenido principal -->
+<!-- Contenido principal -->
 <div id="content-wrapper" class="d-flex flex-column">
     <div id="content">
         <div class="container-fluid">
@@ -16,20 +15,26 @@
                             <thead>
                                 <tr>
                                     <!-- <th>ID</th> -->
-                                    <th>ID Donante</th>
+                                    <th>Donante</th>
                                     <th>FechaDonación</th>
                                     <th>Estado</th>
                                     <th>Tipo de Donación</th>
-                                    <th>ID Solicitud</th>
-                                    <th>Estado de Donación</th>
-                                    <th>Acciones</th>
+                                    <th>Solicitud</th>
+                                    <th>Estado Entrega</th>
+                                    <!-- <th>Acciones</th> -->
                                 </tr>
                             </thead>
                             <tbody>
                                 <?php foreach ($donaciones as $donacion) : ?>
                                     <tr>
                                         <!-- <td><?= $donacion['IDDonacion'] ?></td> -->
-                                        <td><?= $donacion['IDDonante'] ?></td>
+                                        <td>
+                                            <?php foreach ($donantes as $donante) :
+                                                if ($donante['IDDonante'] == $donacion['IDDonante']) {
+                                                    echo $donante['Nombre'];
+                                                }
+                                            endforeach; ?>
+                                        </td>
                                         <td><?= $donacion['FechaDonacion'] ?></td>
                                         <td><?= $donacion['Estado'] ?>
                                             <?php if ($donacion['Estado'] === 'Pendiente') : ?>
@@ -46,7 +51,14 @@
                                             <?php endif; ?>
                                         </td>
                                         <td><?= $donacion['TipoDeDonacion'] ?></td>
-                                        <td><?= $donacion['IDSolicitud'] ?></td>
+                                        <td><?php
+                                            foreach ($solicitudes as $solicitud) :
+                                                if ($solicitud['IDSolicitud'] == $donacion['IDSolicitud']) :
+                                                    echo $solicitud['DescripcionNecesidad'];
+                                                endif;
+                                            endforeach;
+                                            ?>
+                                        </td>
                                         <td><?= $donacion['EstadoDonacion'] ?>
                                             <?php if ($donacion['EstadoDonacion'] === 'Pendiente') : ?>
                                                 <a href="<?= base_url('Admin/admin_donaciones/entregada/' . $donacion['IDDonacion']) ?>" class="btn btn-sm btn-success"><i class="fas fa-check-circle"></i> </a>
@@ -61,9 +73,9 @@
                                                 <a href="<?= base_url('Admin/admin_donaciones/cancelada/' . $donacion['IDDonacion']) ?>" class="btn btn-sm btn-danger"><i class="fas fa-times-circle"></i> </a>
                                             <?php endif; ?>
                                         </td>
-                                        <td>
+                                        <!-- <td>
                                             <a href="<?= base_url('Admin/admin_donaciones/detalles/' . $donacion['IDDonacion']) ?>" class="btn btn-sm btn-primary" title="Detalles"><i class="fas fa-info-circle"></i> Detalles</a>
-                                        </td>
+                                        </td> -->
                                     </tr>
                                 <?php endforeach; ?>
                             </tbody>

@@ -23,11 +23,11 @@
                                             <!-- <th>ID</th> -->
                                             <th>Voluntario</th>
                                             <th>Tipo de Operación</th>
-                                            <th>ID Donación</th>
+                                            <th>Donación</th>
                                             <th>Fecha y Hora</th>
                                             <th>Cantidad de Colaboradores</th>
-                                            <th>Conformidad de Entrega</th>
                                             <th>Conformidad de Recojo</th>
+                                            <th>Conformidad de Entrega</th>
                                             <th>Estado</th>
                                             <th>Acción</th>
                                         </tr>
@@ -36,13 +36,27 @@
                                         <?php foreach ($participaciones as $participacion) : ?>
                                             <tr>
                                                 <!-- <td><?php echo $participacion['IDParticipacion']; ?></td> -->
-                                                <td><?php echo $participacion['IDVoluntario']; ?></td>
+                                                <td><?php
+                                                    foreach ($voluntarios as $voluntario) :
+                                                        if ($voluntario['IDVoluntario'] == $participacion['IDVoluntario']) :
+                                                            foreach ($usuarios as $usuario) :
+                                                                if ($usuario['IDUsuario'] == $voluntario['IDUsuario']) :
+                                                                    echo $usuario['Nombre'];
+                                                                    break;
+                                                                endif;
+                                                            endforeach;
+                                                        endif;
+                                                    endforeach; ?>
+
+
+                                                </td>
                                                 <td><?php echo $participacion['TipoOperacion']; ?></td>
                                                 <td><?php echo $participacion['IDDonacion']; ?></td>
                                                 <td><?php echo $participacion['FechaHora']; ?></td>
                                                 <td><?php echo $participacion['CantidadColaboradores']; ?></td>
-                                                <td><?php echo $participacion['ConformidadEntrega']; ?></td>
                                                 <td><?php echo $participacion['ConformidadRecojo']; ?></td>
+                                                <td><?php echo $participacion['ConformidadEntrega']; ?></td>
+
                                                 <td><?php echo $participacion['EstadoParticipacion']; ?></td>
                                                 <td>
                                                     <?php if ($participacion['EstadoParticipacion'] == 'Pendiente') : ?>
@@ -64,7 +78,7 @@
             </div>
             <!-- /.row -->
 
-  
+
             <!-- Content Row -->
             <div class="row">
                 <div class="col-lg-12">
@@ -80,7 +94,7 @@
                                             <!-- <th>ID</th> -->
                                             <th>Voluntario</th>
                                             <th>Tipo de Operación</th>
-                                            <th>ID Solicitud</th>
+                                            <th>Solicitud</th>
                                             <th>Fecha de Postulación</th>
                                             <th>Estado</th>
                                             <th>Acción</th>
@@ -90,9 +104,26 @@
                                         <?php foreach ($postulaciones as $postulacion) : ?>
                                             <tr>
                                                 <!-- <td><?php echo $postulacion['IDPostulacion']; ?></td> -->
-                                                <td><?php echo $postulacion['IDVoluntario']; ?></td>
+                                                <td><?php
+
+                                                    foreach ($voluntarios as $voluntario) :
+                                                        if ($voluntario['IDVoluntario'] == $postulacion['IDVoluntario']) :
+                                                            foreach ($usuarios as $usuario) :
+                                                                if ($usuario['IDUsuario'] == $voluntario['IDUsuario']) :
+                                                                    echo $usuario['Nombre'];
+                                                                    break;
+                                                                endif;
+                                                            endforeach;
+                                                        endif;
+                                                    endforeach; ?></td>
                                                 <td><?php echo $postulacion['TipoOperacion']; ?></td>
-                                                <td><?php echo $postulacion['IDSolicitud']; ?></td>
+                                                <td><?php
+                                                    foreach ($solicitudes as $solicitud) :
+                                                        if ($solicitud['IDSolicitud'] == $postulacion['IDSolicitud']) :
+                                                            echo $solicitud['DescripcionNecesidad'];
+                                                        endif;
+                                                    endforeach;
+                                                    ?> </td>
                                                 <td><?php echo $postulacion['FechaPostulacion']; ?></td>
                                                 <td><?php echo $postulacion['EstadoPostulacion']; ?></td>
                                                 <td>

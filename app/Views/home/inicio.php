@@ -1,4 +1,3 @@
-
 <!-- Start Slider Area -->
 <div id="home" class="rn-slider-area">
     <div class="slide slider-style-1">
@@ -12,22 +11,21 @@
                                 <span class="header-caption" id="page-top">
                                     <!-- type headline start-->
                                     <span class="cd-headline clip is-full-width">
-                                        <span>Puedes ser</span>
-                                <!-- ROTATING TEXT -->
-                                <span class="cd-words-wrapper">
-                                            <b class="is-visible"> Donador </b>
-                                            <b class="is-hidden"> Voluntario </b>
-                                            <b class="is-hidden"> Receptor.</b>
+                                        <span>Puedes </span>
+                                        <!-- ROTATING TEXT -->
+                                        <span class="cd-words-wrapper">
+                                            <b class="is-visible"> Ayudar. </b>
+                                            <b class="is-hidden"> Donar. </b>
+                                            <b class="is-hidden"> Coperar.</b>
                                         </span>
-                                </span>
-                                <!-- type headline end -->
+                                    </span>
+                                    <!-- type headline end -->
                                 </span>
                             </h1>
-
                             <div>
-                                <p class="description">Nuestro compromiso es servir como un puente entre la 
-                                    generosidad de los donantes y las necesidades de las comunidades, 
-                                    creando un impacto positivo duradero en el mundo. 
+                                <p class="description">Nuestro compromiso es servir como un puente entre la
+                                    generosidad de los donantes y las necesidades de las comunidades,
+                                    creando un impacto positivo duradero en el mundo.
                                     ¡Gracias por unirte a nosotros en esta importante misión!</p>
                             </div>
                         </div>
@@ -119,4 +117,3 @@
 <!-- Back to  top Start -->
 
 <!-- Back to top end -->
-
